@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuickPing VPN — Legal</title>
+  
+  <link rel="stylesheet" href="style.css?v=2025" />
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Vazirmatn:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css" />
+</head>
+<body class="dark-mode">
+
+  <div class="container">
+
+    <div class="lang-switcher">
+      <div class="lang-current" id="lang-current">
+        <span class="fi fi-gb"></span>
+        <span class="lang-name">English</span>
+        <svg class="dropdown-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+          <path d="m7.247 11.14 4.796-5.481c.566-.647-.047-1.573-.95-1.573H4.907c-.903 0-1.516.926-.95 1.573l4.796 5.481a1.12 1.12 0 0 0 1.694 0z"/>
+        </svg>
+      </div>
+
+      <div class="lang-dropdown" id="lang-dropdown">
+        <button data-lang="en" class="lang-option active"><span class="fi fi-gb"></span> English</button>
+        <button data-lang="fa" class="lang-option"><span class="fi fi-ir"></span> فارسی</button>
+        <button data-lang="ar" class="lang-option"><span class="fi fi-sa"></span> العربية</button>
+        <button data-lang="ur" class="lang-option"><span class="fi fi-pk"></span> اردو</button>
+        <button data-lang="ru" class="lang-option"><span class="fi fi-ru"></span> Русский</button>
+        <button data-lang="tr" class="lang-option"><span class="fi fi-tr"></span> Türkçe</button>
+        <button data-lang="ch" class="lang-option"><span class="fi fi-cn"></span> 中文</button>
+        <button data-lang="du" class="lang-option"><span class="fi fi-nl"></span> Nederlands</button>
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="header-content">
+        <a href="https://quickping.net" target="_blank" rel="noopener" class="header-logo-link">
+          <img src="assets/img/logo.png" alt="QuickPing VPN Logo" class="header-logo" />
+        </a>
+        <div class="header-text">
+          <h1 id="page-title">QuickPing VPN</h1>
+          <p class="updated" id="last-updated"></p>
+        </div>
+      </div>
+    </header>
+
+    <main class="content" id="content">
+      <div class="loading">Loading...</div>
+    </main>
+
+    <footer class="footer">
+      <p>© 2025 Boratech. All rights reserved.</p>
+      <p>Contact: <a href="mailto:support@quickping.net">support@quickping.net</a></p>
+    </footer>
+  </div>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const pageType = urlParams.get('page') || 'terms';
+    const validPages = ['terms', 'privacy'];
+    const currentPage = validPages.includes(pageType) ? pageType : 'terms';
+
+    let currentLang = localStorage.getItem('quickping-lang') || 'en';
+    const browserLang = (navigator.language || navigator.userLanguage || 'en').slice(0, 2);
+    if (!localStorage.getItem('quickping-lang') && ['fa', 'ar'].includes(browserLang)) {
+      currentLang = browserLang;
+    }
+
+    function getJsonPath(lang, page) {
+      const fileName = page === 'terms' ? 'term_of_services.json' : 'privacy_and_policy.json';
+      return `assets/lang/${lang}/${fileName}`;
+    }
+
+    async function loadContent(lang) {
+      const path = getJsonPath(lang, currentPage);
+      try {
+        const res = await fetch(path + '?v=' + Date.now());
+        if (!res.ok) throw new Error(`Failed to load: ${path}`);
+        const data = await res.json();
+
+        document.documentElement.lang = lang;
+        document.documentElement.dir = ['fa', 'ar', 'ur'].includes(lang) ? 'rtl' : 'ltr';
+        document.body.style.fontFamily = ['fa', 'ar', 'ur'].includes(lang)
+          ? "'Vazirmatn', sans-serif"
+          : "'Inter', sans-serif";
+
+        document.getElementById('page-title').textContent = data.page_title;
+        document.getElementById('last-updated').textContent = data.last_updated;
+
+        const contentEl = document.getElementById('content');
+        contentEl.innerHTML = '';
+
+        if (data.introduction) {
+          const intro = document.createElement('p');
+          intro.className = 'intro';
+          intro.innerHTML = data.introduction;
+          contentEl.appendChild(intro);
+        }
+
+        data.sections.forEach(sec => {
+          const section = document.createElement('section');
+          section.className = 'section';
+
+          const title = document.createElement('h2');
+          title.innerHTML = `<span class="num">${sec.number}.</span> ${sec.title}`;
+          section.appendChild(title);
+
+          if (sec.content) {
+            const p = document.createElement('p');
+            p.innerHTML = sec.content;
+            section.appendChild(p);
+          }
+
+          if (sec.list && sec.list.length > 0) {
+            const ul = document.createElement('ul');
+            sec.list.forEach(item => {
+              const li = document.createElement('li');
+              li.innerHTML = item;
+              ul.appendChild(li);
+            });
+            section.appendChild(ul);
+          }
+
+          if (sec.subsections) {
+            sec.subsections.forEach(sub => {
+              const subTitle = document.createElement('h3');
+              subTitle.textContent = sub.subtitle;
+              section.appendChild(subTitle);
+              const subP = document.createElement('p');
+              subP.innerHTML = sub.content;
+              section.appendChild(subP);
+            });
+          }
+
+          if (sec.footer) {
+            const footer = document.createElement('p');
+            footer.className = 'section-footer';
+            footer.innerHTML = sec.footer;
+            section.appendChild(footer);
+          }
+
+          contentEl.appendChild(section);
+        });
+
+        if (data.closing) {
+          const closing = document.createElement('p');
+          closing.className = 'closing';
+          closing.innerHTML = data.closing;
+          contentEl.appendChild(closing);
+        }
+
+      } catch (err) {
+        console.error(err);
+        document.getElementById('content').innerHTML = `
+          <p style="color:red; text-align:center; padding:2rem;">
+            Unable to load content. Check console for details.<br><small>${path}</small>
+          </p>`;
+      }
+    }
+
+    const langCurrent = document.getElementById('lang-current');
+    const langDropdown = document.getElementById('lang-dropdown');
+    const langOptions = document.querySelectorAll('.lang-option');
+
+    const langNames = { en: 'English', fa: 'فارسی', ar: 'العربية', ru: 'Русский', tr: 'Türkçe', ch: '中文', du: 'Nederlands', ur: 'اردو' };
+    const flagMap = { en: 'gb', fa: 'ir', ar: 'sa', ru: 'ru', tr: 'tr', ch: 'cn', du: 'nl', ur: 'pk' };
+
+    function updateCurrentLang(lang) {
+      langCurrent.querySelector('.fi').className = `fi fi-${flagMap[lang] || 'gb'}`;
+      langCurrent.querySelector('.lang-name').textContent = langNames[lang] || 'English';
+    }
+
+    langCurrent.addEventListener('click', (e) => {
+      e.stopPropagation();
+      langDropdown.classList.toggle('show');
+      langCurrent.querySelector('.dropdown-icon').style.transform =
+        langDropdown.classList.contains('show') ? 'rotate(180deg)' : 'rotate(0deg)';
+    });
+
+    langOptions.forEach(opt => {
+      opt.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const newLang = opt.dataset.lang;
+        if (newLang === currentLang) {
+          langDropdown.classList.remove('show');
+          return;
+        }
+        currentLang = newLang;
+        localStorage.setItem('quickping-lang', currentLang);
+        updateCurrentLang(currentLang);
+        loadContent(currentLang);
+
+        langOptions.forEach(o => o.classList.remove('active'));
+        opt.classList.add('active');
+
+        langDropdown.classList.remove('show');
+      });
+    });
+
+    document.addEventListener('click', () => {
+      langDropdown.classList.remove('show');
+      langCurrent.querySelector('.dropdown-icon').style.transform = 'rotate(0deg)';
+    });
+
+    updateCurrentLang(currentLang);
+    document.querySelector(`[data-lang="${currentLang}"]`)?.classList.add('active');
+    loadContent(currentLang);
+  </script>
+</body>
+</html>

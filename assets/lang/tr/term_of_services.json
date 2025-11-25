@@ -1,0 +1,94 @@
+{
+  "page_title": "QuickPing VPN Kullanım Koşulları",
+  "last_updated": "Son Güncelleme: 25 Kasım 2025",
+  "introduction": "Bu Kullanım Koşulları (\"Koşullar\"), QuickPing tarafından Boratech işletmeciliğinde sunulan QuickPing VPN hizmetlerine (mobil uygulamalar, web sitesi ve ilgili tüm yazılım/özellikler dahil) erişiminizi ve kullanımınızı düzenler. Hizmetleri kullanarak bu Koşulları ve Gizlilik Politikamızı (https://dl.quickping.net/legal.html?page=privacy adresinde mevcut) kabul etmiş olursunuz. Kabul etmiyorsanız Hizmetleri kullanmayın.",
+
+  "sections": [
+    {
+      "number": "1",
+      "title": "Kabul ve Uygunluk",
+      "content": "Hizmetleri kullanabilmek için en az 16 yaşında olmalısınız (veya bulunduğunuz ülkedeki reşit olma yaşını doldurmuş olmalısınız). Hizmetleri kullanarak bu şartı sağladığınızı ve tüm geçerli yasalara uyacağınızı beyan edersiniz. Bir tüzel kişilik adına kabul ediyorsanız, o tüzel kişiliği bağlama yetkiniz olduğunu garanti edersiniz."
+    },
+    {
+      "number": "2",
+      "title": "Koşullarda Değişiklik",
+      "content": "Bu Koşulları istediğimiz zaman güncelleyebiliriz. Değişiklikler web sitemizde yayınlanır ve e-posta ile bildirilir. Değişiklik sonrası kullanım, yeni koşulları kabul ettiğiniz anlamına gelir."
+    },
+    {
+      "number": "3",
+      "title": "Hesap Oluşturma ve Güvenlik",
+      "content": "Hizmetleri kullanmak için geçerli bir e-posta ve şifreyle hesap oluşturmalısınız. Hesap bilgilerinizin gizliliğinden ve hesabınız altında gerçekleşen tüm faaliyetlerden siz sorumlusunuz. Yetkisiz erişim fark ederseniz derhal bize bildirin. İhlal durumunda hesabınızı askıya alma veya sonlandırma hakkımızı saklı tutarız."
+    },
+    {
+      "number": "4",
+      "title": "Abonelikler ve Ödemeler",
+      "content": "Hizmetler abonelik esasına dayanır. Kayıt sonrası test amacıyla ayda 2 GB ücretsiz veri alırsınız (kötüye kullanımı önlemek için IP başına tek ücretsiz hesap). Ücretli planlar aylık (2,99 $) ve yıllık (24,99 $) sınırsız veri içerir, Apple In-App Purchase ile işlenir. Abonelikler, Apple hesap ayarlarından iptal edilmedikçe otomatik yenilenir. Doğrudan iade yapmıyoruz; tüm iptal ve iadeler Apple politikalarına tabidir. Fiyatlar önceden bildirilerek değişebilir."
+    },
+    {
+      "number": "5",
+      "title": "Hizmet Özellikleri",
+      "subsections": [
+        {
+          "subtitle": "VPN Bağlantısı",
+          "content": "Sing-Box üzerinden VMess, VLESS, Reality ve Hysteria protokolleriyle VPN hizmeti sunuyoruz. Özellikler: sunucu seçimi, bölünmüş tünelleme (kullanıcı tanımlı IP listeleri), her zaman aktif kill switch ve Guardian (sosyal medya, yetişkin içerik ve kumar sitelerini GitHub genel listeleriyle isteğe bağlı engelleme)."
+        },
+        {
+          "subtitle": "Coğrafi Optimizasyon",
+          "content": "Yüksek kaliteli ve konuma uygun hizmet için API uç noktaları ve sunucu listelerini cihaz saat diliminize (cihaz ayarlarından otomatik algılanır, saklanmaz) ve IP konumunuza (uygulama açılış ekranında gerçek zamanlı sorgulanır) göre optimize ederiz. Örneğin İngiltere’deki kullanıcılar İngiltere merkezli API ve 10 sunucu alırken, Almanya’dakiler Almanya API’si ve farklı ülkelerden 15 sunucu alabilir. Bu, hız, stabilite ve uygunluk sağlar — hiçbir konum verisi saklanmadan. Tüm kullanıcılar adil ve en iyi hizmeti alır."
+        },
+        {
+          "subtitle": "Kullanım Sınırları",
+          "content": "Hizmetler yalnızca kişisel kullanım içindir. Yeniden satış, paylaşım veya ticari kullanım yasaktır. Ücretli planlarda sınırsız veri olsa da başkalarının hizmet kalitesini etkileyen aşırı bant genişliği kullanımı yasaktır. Bu tür kötüye kullanımda hesabı sınırlama veya askıya alma hakkımız saklıdır."
+        },
+        {
+          "subtitle": "Kayıt Tutmama Politikası",
+          "content": "Çevrimiçi etkinlik, tarama geçmişi, trafik verisi veya bağlantı loglarını kaydetmiyoruz. Ayrıntılar için Gizlilik Politikasına bakın."
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "title": "Yasaklanan Faaliyetler",
+      "content": "Hizmetleri şu amaçlarla kullanmayı kabul etmiyorsunuz:",
+      "list": [
+        "Çocuk istismarı, spam, kötü amaçlı yazılım dağıtımı, hackleme veya telif hakkı ihlali dahil yasa dışı faaliyetler.",
+        "Taciz, tehdit veya zararlı içerik.",
+        "Hizmetlerin yeniden satışı, paylaşımı veya kötüye kullanımı (ör. birden fazla ücretsiz hesap).",
+        "Altyapımızı aşırı yükleme veya yerel yasaları ihlal edecek şekilde kısıtlamaları aşma."
+      ],
+      "footer": "İhlal durumunda hesabınızı iade olmadan askıya alabilir veya sonlandırabiliriz."
+    },
+    {
+      "number": "7",
+      "title": "Fikri Mülkiyet",
+      "content": "Size Hizmetleri kişisel amaçla kullanmanız için sınırlı, münhasır olmayan, geri alınabilir lisans veriyoruz. Yazılımımızı değiştiremez, tersine mühendislik yapamaz veya dağıtamazsınız. Tüm ticari markalar ve içerikler bize aittir."
+    },
+    {
+      "number": "8",
+      "title": "Sorumluluk Reddi ve Sorumluluk Sınırlaması",
+      "content": "Hizmetler \"olduğu gibi\" sunulur ve garanti verilmez. Yanlış kullanım veya kullanıcı hatalarından doğan dolaylı, dolaylı dolaylı veya tesadüfi zararlardan sorumlu değiliz. Toplam sorumluluğumuz son 12 ayda ödediğiniz tutarla sınırlıdır. Yerel yasa ihlalleri veya kullanıcı kötüye kullanımından sorumlu değiliz."
+    },
+    {
+      "number": "9",
+      "title": "Tazminat",
+      "content": "Hizmetleri kullanımınızdan veya bu Koşulların ihlalinden doğan taleplere karşı bizi tazmin etmeyi kabul edersiniz."
+    },
+    {
+      "number": "10",
+      "title": "Sonlandırma",
+      "content": "Hesabınızı uygulama veya web sitesi üzerinden istediğiniz zaman silebilir, verileriniz kalıcı olarak silinir. İhlal durumunda bildirimli veya bildirimsiz hesabınızı sonlandırabiliriz."
+    },
+    {
+      "number": "11",
+      "title": "Uygulanacak Hukuk ve Uyuşmazlık Çözümü",
+      "content": "Bu Koşullar İngiltere ve Galler yasalarına tabidir. Uyuşmazlıklar Londra Uluslararası Tahkim Mahkemesi (LCIA) aracılığıyla bağlayıcı tahkimle veya İngiltere mahkemelerinde çözülür."
+    },
+    {
+      "number": "12",
+      "title": "Çeşitli Hükümler",
+      "content": "Herhangi bir hüküm geçersiz olursa diğerleri geçerli kalır. İngilizce versiyon çevirilere üstün gelir. Sorularınız için support@quickping.net, hukuki konular için owner@boratech.uk ile iletişime geçin."
+    }
+  ],
+
+  "closing": "Devam ederek bu Koşulları ve Gizlilik Politikamızı kabul etmiş olursunuz."
+}

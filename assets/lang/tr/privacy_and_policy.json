@@ -1,0 +1,78 @@
+{
+  "page_title": "QuickPing VPN Gizlilik Politikası",
+  "last_updated": "Son Güncelleme: 25 Kasım 2025",
+  "introduction": "QuickPing VPN (\"biz\", \"bize\" veya \"şirketimiz\"), Boratech tarafından işletilmekte olup gizliliğinizi korumaya kararlıdır. Bu Gizlilik Politikası, Hizmetlerimizi kullandığınızda kişisel verilerinizi nasıl topladığımızı, kullandığımızı, paylaştığımızı ve koruduğumuzu açıklar. Hizmetleri kullanarak, aşağıda açıklanan şekilde IP adresinizin ve cihaz saat diliminizin hizmet optimizasyonu için kullanılması dahil olmak üzere bu uygulamalara izin vermiş olursunuz. Sorularınız için support@quickping.net adresine yazabilirsiniz.",
+
+  "sections": [
+    {
+      "number": "1",
+      "title": "Topladığımız Veriler",
+      "content": "GDPR, Birleşik Krallık veri yasaları, CCPA ve Apple App Store Kuralları kapsamında veri minimizasyonu ilkelerine uygun olarak minimum düzeyde veri topluyoruz:",
+      "list": [
+        "<strong>Hesap Bilgileri:</strong> Kayıt ve giriş için e-posta adresi ve şifre (SHA256/base64 ile şifrelenmiş).",
+        "<strong>Kayıt IP’si:</strong> Kötüye kullanımı önlemek için kayıt anındaki IP adresiniz (ör. birden fazla ücretsiz hesap açılması); doğrulama sonrası silinir veya minimum düzeyde tutulur.",
+        "<strong>Optimizasyon Verileri:</strong> Gerçek zamanlı IP adresi (uygulama açılış ekranında yalnızca anlık olarak konum bazlı sunucu listesi oluşturmak için sorgulanır) ve cihaz saat dilimi (API uç noktası seçimi için cihaz ayarlarından otomatik algılanır). Hiçbiri sunucularda saklanmaz, yalnızca gerçek zamanlı işlenir.",
+        "<strong>Cihaz ve Hata Bilgileri:</strong> Sentry aracılığıyla hata ayıklama için (cihaz modeli, işletim sistemi sürümü, batarya seviyesi, bellek kullanımı, uygulama sürümü, çökme logları, IP ve ülke/şehir gibi coğrafi bilgi). Bunlar anonimleştirilir ve sadece hata çözümünde kullanılır.",
+        "<strong>Ödeme Bilgileri:</strong> Tamamen Apple tarafından yönetilir; kart bilgilerinizi saklamıyoruz."
+      ],
+      "footer": "Konum erişimi, sağlık verisi, tarama geçmişi, trafik veya bağlantı logları toplanmaz ve saklanmaz (geçici olarak bile). Veriler izleme, profil oluşturma veya açıkça belirtilen amaçlar dışında kullanılmaz."
+    },
+    {
+      "number": "2",
+      "title": "Verilerinizi Nasıl Kullanıyoruz",
+      "content": "Verileri yalnızca Hizmetleri sunmak, rıza (bu Şartlar ve Politika yoluyla) ve meşru menfaatlerimiz (hizmet kalitesi ve güvenliği gibi) temelinde kullanıyoruz:",
+      "list": [
+        "Hizmetleri sağlamak ve sürdürmek (kimlik doğrulama, VPN bağlantısı, kötüye kullanım kontrolleri).",
+        "Hizmet optimizasyonu: Gerçek zamanlı IP konumu ile sunucu listelerini özelleştirme ve cihaz saat dilimi ile daha hızlı/stabil API uç noktaları seçme.",
+        "Hata ayıklama ve geliştirme (Sentry çökme raporları).",
+        "Yasal yükümlülüklere uyum (ör. dolandırıcılık önleme)."
+      ],
+      "footer": "Veriler pazarlama, reklam veya üçüncü taraf amaçlarla satılmaz, paylaşılmaz veya kullanılmaz — Apple Guideline 5.4 ile tamamen uyumludur."
+    },
+    {
+      "number": "3",
+      "title": "Kayıt Tutmama Politikası (No-Logs)",
+      "content": "Katı bir kayıt tutmama politikasına bağlıyız: Çevrimiçi etkinlikleriniz, ziyaret ettiğiniz siteler, trafik verileri veya bağlantı logları — bir saniye bile — kaydedilmez. Optimizasyon için kullanılan saat dilimi ve IP loglanmaz, yalnızca gerçek zamanlı işlenir. Sunucular Sing-Box protokolleriyle şifrelenir; veriler anonimdir ve asla saklanmaz. Uyumluluğu sağlamak için düzenli iç denetimler gerçekleştiriyoruz."
+    },
+    {
+      "number": "4",
+      "title": "Veri Paylaşımı",
+      "list": [
+        "<strong>Üçüncü Taraflar:</strong> Yalnızca Sentry (çökme raporları) ve Google Login SDK (kimlik doğrulama). Veri satılmaz veya paylaşılmaz.",
+        "<strong>Yasal Zorunluluklar:</strong> Yasal gereklilik durumunda (ör. mahkeme emri) ve geçerliliği doğrulandıktan sonra paylaşılabilir.",
+        "<strong>Kurumsal İşlemler:</strong> Birleşme veya satış durumunda."
+      ],
+      "footer": "Uluslararası transferler standart sözleşme maddeleriyle korunur. Açık rıza olmadan üçüncü taraflar (AI sağlayıcıları dahil) ile veri paylaşmayız."
+    },
+    {
+      "number": "5",
+      "title": "Güvenlik Önlemleri",
+      "content": "Veriler aktarım sırasında ve saklanırken (VMess gibi protokollerle) şifrelenir. Güvenlik duvarları, erişim kontrolleri ve düzenli güvenlik denetimleri uyguluyoruz (GDPR Madde 32 ve CCPA güvenlik gereksinimleriyle uyumlu). Ancak hiçbir sistem %100 güvenli değildir."
+    },
+    {
+      "number": "6",
+      "title": "Haklarınız",
+      "content": "Yürürlükteki yasalara saygı duyuyoruz: Hesap ayarlarından verilerinize erişebilir, düzeltebilir veya silebilirsiniz. AB/Birleşik Krallık (GDPR) ve Kaliforniya (CCPA) hakları tam desteklenir. E-posta talepleri 30-45 gün içinde yanıtlanır. Veriler yalnızca hesap aktifken + yasal nedenlerle 2 yıl süreyle saklanır."
+    },
+    {
+      "number": "7",
+      "title": "Çocukların Gizliliği",
+      "content": "Hizmetler 16 yaş altı bireylere yönelik değildir. Bilerek reşit olmayanlardan veri toplamayız. COPPA ve GDPR çocuk hükümlerine tamamen uyumluyuz."
+    },
+    {
+      "number": "8",
+      "title": "Politikada Değişiklikler",
+      "content": "Politikayı güncelleyebiliriz; değişiklikler e-posta ile bildirilir. Kullanıma devam etmek değişiklikleri kabul ettiğiniz anlamına gelir."
+    },
+    {
+      "number": "9",
+      "title": "Uyumluluk",
+      "content": "GDPR, UK GDPR, CCPA ve Apple App Store Kurallarına (özellikle 5.4) tam uyumluyuz. Verileri minimumda tutar, rıza alır ve yanıltıcı iddia yapmayız."
+    },
+    {
+      "number": "10",
+      "title": "İletişim",
+      "content": "support@quickping.net veya owner@boratech.uk<br>Unit 13 Freeland Park, Wareham Road, Lytchett Matravers, Poole, BH16 6FA, UK<br>+447477232441"
+    }
+  ]
+}

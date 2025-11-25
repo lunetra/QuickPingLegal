@@ -1,0 +1,94 @@
+{
+    "page_title": "QuickPing VPN Terms of Service",
+    "last_updated": "Last Updated: November 25, 2025",
+    "introduction": "These Terms of Service (\"Terms\") govern your access to and use of the QuickPing VPN services, including our mobile applications, website, and any related software or features (collectively, the \"Services\") provided by QuickPing, operated by Boratech (\"we,\" \"us,\" or \"our\"). By accessing or using the Services, you agree to be bound by these Terms and our Privacy Policy available at (https://dl.quickping.net/legal.html?page=privacy). If you do not agree, do not use the Services.",
+  
+    "sections": [
+      {
+        "number": "1",
+        "title": "Acceptance and Eligibility",
+        "content": "You must be at least 16 years old (or the age of majority in your jurisdiction) to use the Services. By using the Services, you represent that you meet this requirement and agree to comply with all applicable laws. If you are accepting on behalf of an entity, you warrant that you have the authority to bind that entity."
+      },
+      {
+        "number": "2",
+        "title": "Modifications to Terms",
+        "content": "We may update these Terms at any time. Changes will be posted on our website, and we will notify you via email. Your continued use of the Services after changes constitutes acceptance."
+      },
+      {
+        "number": "3",
+        "title": "Account Creation and Security",
+        "content": "To use the Services, you must create an account with a valid email and password. You are responsible for maintaining the confidentiality of your account credentials and for all activities under your account. Notify us immediately of any unauthorized access. We reserve the right to terminate or suspend your account for violations."
+      },
+      {
+        "number": "4",
+        "title": "Subscriptions and Payments",
+        "content": "The Services are subscription-based. Upon registration, you receive 2GB free data monthly for testing (limited to one free account per IP to prevent abuse). Paid plans include monthly ($2.99) and yearly ($24.99) subscriptions with unlimited data, processed via Apple In-App Purchase. Subscriptions auto-renew unless canceled through your Apple account settings. We do not offer direct refunds; all cancellations and refunds are handled per Apple's subscription policies. Prices may change with notice."
+      },
+      {
+        "number": "5",
+        "title": "Service Features",
+        "subsections": [
+          {
+            "subtitle": "VPN Connectivity",
+            "content": "We provide VPN services using protocols like VMess, VLESS, Reality, and Hysteria via Sing-Box. Features include server selection, split tunneling (user-defined IP lists for inclusive/exclusive routing), kill switch (always enabled), and Guardian (optional blocking of social media, adult content, gambling sites using public GitHub lists)."
+          },
+          {
+            "subtitle": "Geo-Optimization",
+            "content": "To provide high-quality, location-appropriate services, we optimize API endpoints and VPN server lists based on your device's timezone (automatically detected from device settings, not stored on servers) and IP address location (queried real-time during splash screen on app launch). For example, users in the UK may receive UK-based API domains and a tailored list of 10 servers, while users in Germany may get Germany-based APIs and 15 servers from different countries. This ensures better speed, stability, and relevance without storing location data. All users receive fair and optimal services based on their detected location."
+          },
+          {
+            "subtitle": "Usage Limits",
+            "content": "Services are for personal use only. No resale, sharing, or commercial use. Unlimited data on paid plans, but we prohibit abuse (e.g., excessive bandwidth that impacts service quality for others). We may limit or suspend accounts for such abuse."
+          },
+          {
+            "subtitle": "No-Logs Policy",
+            "content": "We do not log or store any online activities, browsing history, traffic data, or connection logs. See Privacy Policy for details."
+          }
+        ]
+      },
+      {
+        "number": "6",
+        "title": "Prohibited Activities",
+        "content": "You agree not to use the Services for:",
+        "list": [
+          "Illegal activities, including but not limited to child exploitation, spam, malware distribution, hacking, or copyright infringement.",
+          "Harassment, threats, or harmful content.",
+          "Reselling, sharing, or abusing the Services (e.g., creating multiple free accounts).",
+          "Overloading our infrastructure or bypassing restrictions in ways that violate local laws."
+        ],
+        "footer": "We may suspend or terminate your account without refund for violations."
+      },
+      {
+        "number": "7",
+        "title": "Intellectual Property",
+        "content": "We grant you a limited, non-exclusive, revocable license to use the Services for personal purposes. You may not modify, reverse engineer, or distribute our software. All trademarks and content are owned by us."
+      },
+      {
+        "number": "8",
+        "title": "Disclaimers and Limitations of Liability",
+        "content": "The Services are provided \"as is\" without warranties. We disclaim liability for any damages, including indirect, consequential, or incidental losses arising from your misuse or any user errors. Our total liability is limited to the amount you paid in the last 12 months. We are not responsible for any violations of local laws or misuse by users."
+      },
+      {
+        "number": "9",
+        "title": "Indemnification",
+        "content": "You agree to indemnify us from any claims arising from your use of the Services or violations of these Terms."
+      },
+      {
+        "number": "10",
+        "title": "Termination",
+        "content": "You may delete your account at any time via the app or website, which permanently removes your data. We may terminate your account for violations, with or without notice."
+      },
+      {
+        "number": "11",
+        "title": "Governing Law and Dispute Resolution",
+        "content": "These Terms are governed by the laws of England and Wales. Disputes will be resolved through binding arbitration via the London Court of International Arbitration (LCIA) or courts in England."
+      },
+      {
+        "number": "12",
+        "title": "Miscellaneous",
+        "content": "If any provision is invalid, the rest remain enforceable. English version prevails over translations. Contact us at support@quickping.net for questions or owner@boratech.uk for legal inquiries."
+      }
+    ],
+  
+    "closing": "By continuing, you agree to these Terms and our Privacy Policy."
+  }
