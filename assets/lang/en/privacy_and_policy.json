@@ -1,78 +1,84 @@
 {
-    "page_title": "QuickPing VPN Privacy Policy",
-    "last_updated": "Last Updated: November 25, 2025",
-    "introduction": "QuickPing VPN (\"we,\" \"us,\" or \"our\"), operated by Boratech, is committed to protecting your privacy. This Privacy Policy explains how we collect, use, share, and protect your personal data when you use our Services. By using the Services, you consent to these practices, including the use of your IP address and device timezone for service optimization as described below. For questions, contact support@quickping.net.",
-  
-    "sections": [
-      {
-        "number": "1",
-        "title": "Data We Collect",
-        "content": "We collect minimal data in compliance with data minimization principles under GDPR, UK data laws, CCPA, and Apple App Store Guidelines:",
-        "list": [
-          "<strong>Account Information:</strong> Email and password (encrypted with SHA256/base64) for registration and login.",
-          "<strong>Registration IP:</strong> Your IP address at sign-up to prevent abuse (e.g., multiple free accounts); deleted after verification or retained minimally if needed.",
-          "<strong>Optimization Data:</strong> Real-time IP address (queried momentarily during splash screen on app launch for VPN server list tailoring based on location) and device timezone (automatically detected from device settings for API endpoint selection). Neither is stored on servers; processed in real-time only and not retained.",
-          "<strong>Device and Crash Information:</strong> Via Sentry for debugging (e.g., device model, OS version, battery level, memory usage, app version, crash logs, IP address, geography like country/city). This is anonymized and used only for error resolution.",
-          "<strong>Payment Data:</strong> Handled by Apple; we do not store card details."
-        ],
-        "footer": "No location access, health data, browsing history, traffic, or connection logs collected or stored (even temporarily). We do not use data for tracking, profiling, or any purpose beyond what's explicitly stated."
-      },
-      {
-        "number": "2",
-        "title": "How We Use Your Data",
-        "content": "We use data solely for providing the Services, based on consent (via these Terms and Policy) and legitimate interests (e.g., service quality and security):",
-        "list": [
-          "To provide and maintain the Services (e.g., authentication, VPN connectivity, anti-abuse checks).",
-          "For service optimization: Using real-time IP location to tailor VPN server lists and device timezone to select appropriate API domains/servers for better speed and stability.",
-          "For debugging and improvements (Sentry crashes).",
-          "To comply with legal obligations (e.g., fraud prevention)."
-        ],
-        "footer": "No selling, sharing, or using data for marketing, advertising, or any third-party purposes, in line with Apple Guideline 5.4."
-      },
-      {
-        "number": "3",
-        "title": "No-Logs Policy",
-        "content": "We adhere to a strict no-logs policy: No storage of your online activities, visited sites, traffic data, or any logs – not even for a second. Timezone and IP for optimization are not logged or retained; processed real-time only. Servers use Sing-Box protocols for encryption; data is anonymized and never retained. We conduct internal audits to ensure compliance."
-      },
-      {
-        "number": "4",
-        "title": "Data Sharing",
-        "list": [
-          "<strong>Third Parties:</strong> Sentry for crashes; Google Login SDK for authentication. No data sold or shared.",
-          "<strong>Legal Requirements:</strong> We may disclose if required by law (e.g., court order), but only after verifying legality.",
-          "<strong>Corporate Transactions:</strong> In case of merger/sale."
-        ],
-        "footer": "International transfers are protected by standard contractual clauses. We do not share data with third parties, including AI providers, without explicit consent."
-      },
-      {
-        "number": "5",
-        "title": "Security Measures",
-        "content": "Data is encrypted in transit and at rest (using protocols like VMess). We implement firewalls, access controls, and regular security audits to protect data, aligning with GDPR Article 32 and CCPA security requirements. However, no system is 100% secure."
-      },
-      {
-        "number": "6",
-        "title": "Your Rights",
-        "content": "We respect your rights under applicable laws: access, correct, or delete your data via account settings. EU/UK (GDPR), CA (CCPA) rights fully supported. Email requests responded within 30-45 days. Data retained only while account active + 2 years for legal reasons."
-      },
-      {
-        "number": "7",
-        "title": "Children's Privacy",
-        "content": "Services not directed at under 16. We do not knowingly collect data from minors. Compliant with COPPA and GDPR child provisions."
-      },
-      {
-        "number": "8",
-        "title": "Changes to Policy",
-        "content": "We may update; notified via email. Continued use accepts changes."
-      },
-      {
-        "number": "9",
-        "title": "Compliance",
-        "content": "We comply with GDPR, UK GDPR, CCPA, and Apple App Store Guidelines (e.g., 5.4). We minimize data, obtain consent, and ensure no misleading claims."
-      },
-      {
-        "number": "10",
-        "title": "Contact",
-        "content": "support@quickping.net or owner@boratech.uk<br>Unit 13 Freeland Park, Wareham Road, Lytchett Matravers, Poole, BH16 6FA, UK<br>+447477232441"
-      }
-    ]
-  }
+  "page_title": "QuickPing VPN Privacy Policy",
+  "last_updated": "Last Updated: November 25, 2025",
+  "introduction": "QuickPing VPN (\"we,\" \"us,\" or \"our\"), operated by Boratech, is committed to protecting your privacy. This Privacy Policy explains how we collect, use, share, and protect your personal data when you use our Services. By using the Services, you consent to these practices, including the use of your IP address and device timezone for service optimization as described below. For questions, contact [support_email].",
+
+  "sections": [
+    {
+      "number": "1",
+      "title": "Data We Collect",
+      "content": "We collect minimal data in compliance with data minimization principles under GDPR, UK data laws, CCPA, and Apple App Store Guidelines:",
+      "list": [
+        "<strong>Account Information:</strong> Email and password (encrypted with SHA256/base64) for registration and login.",
+        "<strong>Registration IP:</strong> Your IP address at sign-up to prevent abuse (e.g., multiple free accounts); deleted after verification or retained minimally if needed.",
+        "<strong>Optimization Data:</strong> Real-time IP address (queried momentarily during splash screen on app launch for VPN server list tailoring based on location) and device timezone (automatically detected from device settings for API endpoint selection). Neither is stored on servers; processed in real-time only and not retained.",
+        "<strong>Device and Crash Information:</strong> Via Sentry for debugging (e.g., device model, OS version, battery level, memory usage, app version, crash logs, IP address, geography like country/city). This is anonymized and used only for error resolution. Full list: app_memory_limit, app_memory_usage, app_peak_memory, arch, battery_level, brand, charging, connection_type, cpu_description, device_type, dist, environment, family, free_storage, handled, id, interface_type, language, level, low_memory, manufacturer, mechanism, memory_size, model, model_id, name, online, orientation, processor_count, release, screen_density, screen_dpi, screen_resolution, simulator, storage_size, system_free_memory, thermal_state, timezone, user ID/IP/geography.",
+        "<strong>Payment Data:</strong> Handled by Apple; we do not store card details."
+      ],
+      "footer": "No location access, health data, browsing history, traffic, or connection logs collected or stored (even temporarily). We do not use data for tracking, profiling, or any purpose beyond what's explicitly stated."
+    },
+    {
+      "number": "2",
+      "title": "How We Use Your Data",
+      "content": "We use data solely for providing the Services, based on consent (via these Terms and Policy) and legitimate interests (e.g., service quality and security):",
+      "list": [
+        "To provide and maintain the Services (e.g., authentication, VPN connectivity, anti-abuse checks).",
+        "For service optimization: Using real-time IP location to tailor VPN server lists (e.g., different numbers/countries based on user location) and device timezone to select appropriate API domains/servers for better speed and stability. This processing is essential for delivering optimal services and is fair to all users, with no discrimination.",
+        "For debugging and improvements (Sentry crashes).",
+        "To comply with legal obligations (e.g., fraud prevention)."
+      ],
+      "footer": "No selling, sharing, or using data for marketing, advertising, or any third-party purposes, in line with Apple Guideline 5.4."
+    },
+    {
+      "number": "3",
+      "title": "No-Logs Policy",
+      "content": "We adhere to a strict no-logs policy: No storage of your online activities, visited sites, traffic data, or any logs – not even for a second. Timezone and IP for optimization are not logged or retained; processed real-time only. Servers use [singbox_link] protocols for encryption; data is anonymized and never retained. We conduct internal audits to ensure compliance, though no external certification is currently in place."
+    },
+    {
+      "number": "4",
+      "title": "Data Sharing",
+      "list": [
+        "<strong>Third Parties:</strong> Sentry for crashes (see their policy); Google Login SDK for authentication. No data sold or shared for any purpose.",
+        "<strong>Legal Requirements:</strong> We may disclose if required by law (e.g., court order), but only after verifying legality.",
+        "<strong>Corporate Transactions:</strong> In case of merger/sale."
+      ],
+      "footer": "International transfers are protected by standard contractual clauses (e.g., GDPR-compliant). We do not share data with third parties, including AI providers, without explicit consent, per Apple Guidelines."
+    },
+    {
+      "number": "5",
+      "title": "Security Measures",
+      "content": "Data is encrypted in transit and at rest (using protocols like VMess). We implement firewalls, access controls, and regular security audits to protect data, aligning with GDPR Article 32 and CCPA security requirements. However, no system is 100% secure."
+    },
+    {
+      "number": "6",
+      "title": "Your Rights",
+      "content": "We respect your rights under applicable laws:",
+      "list": [
+        "Access, correct, or delete your data via account settings (delete account removes all, including IP).",
+        "For EU/UK users (GDPR/UK GDPR): Rights to access, rectification, erasure, restriction, portability, and objection (e.g., to IP/timezone processing, though essential for service; objection may limit functionality). Processing basis: consent and legitimate interest (service delivery). We comply without a designated Data Protection Officer, as our processing is not large-scale, but will appoint one if required.",
+        "For CA users (CCPA): Rights to know, delete, opt-out of sales (none occur), and non-discrimination. Email for requests."
+      ],
+      "footer": "Retention: Data kept as long as account active + 2 years for legal reasons; then deleted. To exercise rights, email us; we respond within 30-45 days as per laws."
+    },
+    {
+      "number": "7",
+      "title": "Children's Privacy",
+      "content": "Services not directed at under 16. We do not knowingly collect data from minors. Guardian feature allows blocking, but parental supervision recommended. Compliant with COPPA and GDPR child provisions."
+    },
+    {
+      "number": "8",
+      "title": "Changes to Policy",
+      "content": "We may update; notified via email. Continued use accepts changes."
+    },
+    {
+      "number": "9",
+      "title": "Compliance",
+      "content": "We comply with GDPR (for EU, treating IP/timezone as personal data with explicit disclosure), UK data laws (post-Brexit UK GDPR), CCPA (for CA, with required rights), and Apple App Store Guidelines (e.g., 5.4: no data sharing/selling, clear disclosure of all data practices). We minimize data, obtain consent, and ensure no misleading claims. For global users, we adhere to best practices like data audits and encryption."
+    },
+    {
+      "number": "10",
+      "title": "Contact",
+      "content": "[support_email] or [legal_email] for legal inquiries. Unit 13 Freeland Park, Wareham Road, Lytchett Matravers, Poole, BH16 6FA, UK. +447477232441."
+    }
+  ]
+}

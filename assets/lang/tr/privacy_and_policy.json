@@ -1,78 +1,84 @@
 {
   "page_title": "QuickPing VPN Gizlilik Politikası",
   "last_updated": "Son Güncelleme: 25 Kasım 2025",
-  "introduction": "QuickPing VPN (\"biz\", \"bize\" veya \"şirketimiz\"), Boratech tarafından işletilmekte olup gizliliğinizi korumaya kararlıdır. Bu Gizlilik Politikası, Hizmetlerimizi kullandığınızda kişisel verilerinizi nasıl topladığımızı, kullandığımızı, paylaştığımızı ve koruduğumuzu açıklar. Hizmetleri kullanarak, aşağıda açıklanan şekilde IP adresinizin ve cihaz saat diliminizin hizmet optimizasyonu için kullanılması dahil olmak üzere bu uygulamalara izin vermiş olursunuz. Sorularınız için support@quickping.net adresine yazabilirsiniz.",
+  "introduction": "Boratech tarafından işletilen QuickPing VPN (“biz”, “bizi” veya “bizim”), gizliliğinizi korumaya kararlıdır. Bu Gizlilik Politikası, Hizmetlerimizi kullandığınızda kişisel verilerinizi nasıl topladığımızı, kullandığımızı, paylaştığımızı ve koruduğumuzu açıklar. Hizmetleri kullanarak, aşağıda açıklandığı şekilde IP adresinizin ve cihaz saat diliminizin hizmet optimizasyonu için kullanılmasını da içeren bu uygulamaları kabul etmiş olursunuz. Sorularınız için [support_email] ile iletişime geçin.",
 
   "sections": [
     {
       "number": "1",
       "title": "Topladığımız Veriler",
-      "content": "GDPR, Birleşik Krallık veri yasaları, CCPA ve Apple App Store Kuralları kapsamında veri minimizasyonu ilkelerine uygun olarak minimum düzeyde veri topluyoruz:",
+      "content": "GDPR, Birleşik Krallık veri yasaları, CCPA ve Apple App Store Yönergeleri kapsamındaki veri minimizasyonu ilkelerine uygun olarak yalnızca minimum düzeyde veri toplarız:",
       "list": [
-        "<strong>Hesap Bilgileri:</strong> Kayıt ve giriş için e-posta adresi ve şifre (SHA256/base64 ile şifrelenmiş).",
-        "<strong>Kayıt IP’si:</strong> Kötüye kullanımı önlemek için kayıt anındaki IP adresiniz (ör. birden fazla ücretsiz hesap açılması); doğrulama sonrası silinir veya minimum düzeyde tutulur.",
-        "<strong>Optimizasyon Verileri:</strong> Gerçek zamanlı IP adresi (uygulama açılış ekranında yalnızca anlık olarak konum bazlı sunucu listesi oluşturmak için sorgulanır) ve cihaz saat dilimi (API uç noktası seçimi için cihaz ayarlarından otomatik algılanır). Hiçbiri sunucularda saklanmaz, yalnızca gerçek zamanlı işlenir.",
-        "<strong>Cihaz ve Hata Bilgileri:</strong> Sentry aracılığıyla hata ayıklama için (cihaz modeli, işletim sistemi sürümü, batarya seviyesi, bellek kullanımı, uygulama sürümü, çökme logları, IP ve ülke/şehir gibi coğrafi bilgi). Bunlar anonimleştirilir ve sadece hata çözümünde kullanılır.",
-        "<strong>Ödeme Bilgileri:</strong> Tamamen Apple tarafından yönetilir; kart bilgilerinizi saklamıyoruz."
+        "<strong>Hesap Bilgileri:</strong> Kayıt ve giriş için e-posta ve parola (SHA256/base64 ile şifrelenmiş).",
+        "<strong>Kayıt IP’si:</strong> Kötüye kullanımı önlemek için (ör. birden fazla ücretsiz hesap) kayıt anındaki IP adresiniz; doğrulamadan sonra silinir veya gerekirse minimum süreyle tutulur.",
+        "<strong>Optimizasyon Verileri:</strong> Gerçek zamanlı IP adresi (uygulama açılış splash ekranında anlık olarak sorgulanır ve konuma göre VPN sunucu listesi özelleştirilir) ve cihaz saat dilimi (API uç noktası seçimi için cihaz ayarlarından otomatik alınır). Hiçbiri sunucularda saklanmaz; yalnızca gerçek zamanlı işlenir ve tutulmaz.",
+        "<strong>Cihaz ve Çökme Bilgileri:</strong> Hata ayıklama için Sentry aracılığıyla (örn. cihaz modeli, işletim sistemi sürümü, pil seviyesi, bellek kullanımı, uygulama sürümü, çökme kayıtları, IP adresi, ülke/şehir gibi coğrafya). Bunlar anonimleştirilir ve yalnızca hata çözümü için kullanılır. Tam liste: app_memory_limit, app_memory_usage, app_peak_memory, arch, battery_level, brand, charging, connection_type, cpu_description, device_type, dist, environment, family, free_storage, handled, id, interface_type, language, level, low_memory, manufacturer, mechanism, memory_size, model, model_id, name, online, orientation, processor_count, release, screen_density, screen_dpi, screen_resolution, simulator, storage_size, system_free_memory, thermal_state, timezone, user ID/IP/geography.",
+        "<strong>Ödeme Verileri:</strong> Apple tarafından işlenir; kart bilgilerinizi saklamayız."
       ],
-      "footer": "Konum erişimi, sağlık verisi, tarama geçmişi, trafik veya bağlantı logları toplanmaz ve saklanmaz (geçici olarak bile). Veriler izleme, profil oluşturma veya açıkça belirtilen amaçlar dışında kullanılmaz."
+      "footer": "Konum erişimi, sağlık verileri, tarama geçmişi, trafik veya bağlantı kayıtları toplanmaz ya da saklanmaz (geçici olarak bile). Verileri izleme, profilleme veya burada açıkça belirtilenler dışında herhangi bir amaç için kullanmayız."
     },
     {
       "number": "2",
       "title": "Verilerinizi Nasıl Kullanıyoruz",
-      "content": "Verileri yalnızca Hizmetleri sunmak, rıza (bu Şartlar ve Politika yoluyla) ve meşru menfaatlerimiz (hizmet kalitesi ve güvenliği gibi) temelinde kullanıyoruz:",
+      "content": "Verileri yalnızca Hizmetleri sağlamak için, bu Şartlar ve Politika aracılığıyla verdiğiniz rıza ve meşru menfaatler temelinde kullanırız (örn. hizmet kalitesi ve güvenliği):",
       "list": [
-        "Hizmetleri sağlamak ve sürdürmek (kimlik doğrulama, VPN bağlantısı, kötüye kullanım kontrolleri).",
-        "Hizmet optimizasyonu: Gerçek zamanlı IP konumu ile sunucu listelerini özelleştirme ve cihaz saat dilimi ile daha hızlı/stabil API uç noktaları seçme.",
-        "Hata ayıklama ve geliştirme (Sentry çökme raporları).",
-        "Yasal yükümlülüklere uyum (ör. dolandırıcılık önleme)."
+        "Hizmetleri sağlamak ve sürdürmek (örn. kimlik doğrulama, VPN bağlantısı, kötüye kullanım kontrolleri).",
+        "Hizmet optimizasyonu için: Gerçek zamanlı IP konumunu VPN sunucu listelerini özelleştirmek ve cihaz saat dilimini daha iyi hız ve stabilite için uygun API alan adlarını/sunucularını seçmek amacıyla kullanmak. Bu işlem, en iyi hizmeti sunmak için gereklidir ve hiçbir ayrımcılık olmadan tüm kullanıcılar için adildir.",
+        "Hata ayıklama ve iyileştirmeler için (Sentry çökme kayıtları).",
+        "Yasal yükümlülüklere uymak için (örn. dolandırıcılık önleme)."
       ],
-      "footer": "Veriler pazarlama, reklam veya üçüncü taraf amaçlarla satılmaz, paylaşılmaz veya kullanılmaz — Apple Guideline 5.4 ile tamamen uyumludur."
+      "footer": "Apple Yönergesi 5.4’e uygun olarak veriler satışa sunulmaz, paylaşılmaz veya pazarlama/reklam ya da üçüncü taraf amaçları için kullanılmaz."
     },
     {
       "number": "3",
-      "title": "Kayıt Tutmama Politikası (No-Logs)",
-      "content": "Katı bir kayıt tutmama politikasına bağlıyız: Çevrimiçi etkinlikleriniz, ziyaret ettiğiniz siteler, trafik verileri veya bağlantı logları — bir saniye bile — kaydedilmez. Optimizasyon için kullanılan saat dilimi ve IP loglanmaz, yalnızca gerçek zamanlı işlenir. Sunucular Sing-Box protokolleriyle şifrelenir; veriler anonimdir ve asla saklanmaz. Uyumluluğu sağlamak için düzenli iç denetimler gerçekleştiriyoruz."
+      "title": "Kayıt Tutmama Politikası",
+      "content": "Katı bir kayıt tutmama politikasına bağlıyız: Çevrimiçi aktiviteleriniz, ziyaret ettiğiniz siteler, trafik verileri veya herhangi bir kayıt asla saklanmaz – bir saniyeliğine bile. Optimizasyon amacıyla kullanılan saat dilimi ve IP kaydedilmez veya tutulmaz; yalnızca gerçek zamanlı işlenir. Sunucular şifreleme için [singbox_link] protokollerini kullanır; veriler anonimleştirilir ve hiçbir zaman saklanmaz. Uyumu sağlamak için dahili denetimler gerçekleştiririz, ancak şu anda harici bir sertifikamız yoktur."
     },
     {
       "number": "4",
       "title": "Veri Paylaşımı",
       "list": [
-        "<strong>Üçüncü Taraflar:</strong> Yalnızca Sentry (çökme raporları) ve Google Login SDK (kimlik doğrulama). Veri satılmaz veya paylaşılmaz.",
-        "<strong>Yasal Zorunluluklar:</strong> Yasal gereklilik durumunda (ör. mahkeme emri) ve geçerliliği doğrulandıktan sonra paylaşılabilir.",
+        "<strong>Üçüncü Taraflar:</strong> Çökmeler için Sentry (politikalarına bakınız); kimlik doğrulama için Google Login SDK. Hiçbir veri herhangi bir amaçla satılmaz veya paylaşılmaz.",
+        "<strong>Yasal Gereklilikler:</strong> Yasa gereği talep edilmesi halinde (örn. mahkeme kararı) yalnızca hukuki geçerlilik doğrulandıktan sonra açıklayabiliriz.",
         "<strong>Kurumsal İşlemler:</strong> Birleşme veya satış durumunda."
       ],
-      "footer": "Uluslararası transferler standart sözleşme maddeleriyle korunur. Açık rıza olmadan üçüncü taraflar (AI sağlayıcıları dahil) ile veri paylaşmayız."
+      "footer": "Uluslararası veri aktarımları standart sözleşme maddeleri ile korunur (örn. GDPR uyumlu). Apple Yönergeleri uyarınca, açık rıza olmadan verileri üçüncü taraflarla, yapay zekâ sağlayıcıları dâhil, paylaşmayız."
     },
     {
       "number": "5",
       "title": "Güvenlik Önlemleri",
-      "content": "Veriler aktarım sırasında ve saklanırken (VMess gibi protokollerle) şifrelenir. Güvenlik duvarları, erişim kontrolleri ve düzenli güvenlik denetimleri uyguluyoruz (GDPR Madde 32 ve CCPA güvenlik gereksinimleriyle uyumlu). Ancak hiçbir sistem %100 güvenli değildir."
+      "content": "Veriler aktarım sırasında ve beklemede şifrelenir (VMess gibi protokoller kullanılarak). GDPR Madde 32 ve CCPA güvenlik gereklilikleriyle uyumlu olarak güvenlik duvarları, erişim kontrolleri ve düzenli güvenlik denetimleri uygularız. Ancak hiçbir sistem %100 güvenli değildir."
     },
     {
       "number": "6",
       "title": "Haklarınız",
-      "content": "Yürürlükteki yasalara saygı duyuyoruz: Hesap ayarlarından verilerinize erişebilir, düzeltebilir veya silebilirsiniz. AB/Birleşik Krallık (GDPR) ve Kaliforniya (CCPA) hakları tam desteklenir. E-posta talepleri 30-45 gün içinde yanıtlanır. Veriler yalnızca hesap aktifken + yasal nedenlerle 2 yıl süreyle saklanır."
+      "content": "Uygulanabilir yasalar kapsamındaki haklarınıza saygı gösteriyoruz:",
+      "list": [
+        "Hesap ayarları aracılığıyla verilerinize erişme, düzeltme veya silme (hesap silme tüm verileri, IP dâhil, kaldırır).",
+        "AB/Birleşik Krallık kullanıcıları için (GDPR/UK GDPR): Erişim, düzeltme, silme, kısıtlama, taşınabilirlik ve itiraz hakları (örn. IP/saat dilimi işlemeye itiraz edebilirsiniz; ancak bu hizmet işlevselliğini sınırlayabilir). İşleme dayanağı: rıza ve meşru menfaat (hizmet sunumu). Büyük ölçekli işlem yapmadığımız için atanmış bir Veri Koruma Görevlimiz yoktur, ancak gerekirse atanacaktır.",
+        "Kaliforniya kullanıcıları için (CCPA): Bilme, silme, satıştan vazgeçme (satış yoktur) ve ayrımcılığa uğramama hakları. Talepler için e-posta."
+      ],
+      "footer": "Saklama: Veriler, hesap aktif olduğu sürece + yasal nedenlerle 2 yıl tutulur; ardından silinir. Haklarınızı kullanmak için bize e-posta gönderin; yasalara uygun olarak 30-45 gün içinde yanıt veririz."
     },
     {
       "number": "7",
       "title": "Çocukların Gizliliği",
-      "content": "Hizmetler 16 yaş altı bireylere yönelik değildir. Bilerek reşit olmayanlardan veri toplamayız. COPPA ve GDPR çocuk hükümlerine tamamen uyumluyuz."
+      "content": "Hizmetler 16 yaş altına yönelik değildir. Reşit olmayanlardan bilerek veri toplamayız. Guardian özelliği engelleme sağlar, ancak ebeveyn gözetimi tavsiye edilir. COPPA ve GDPR çocuk hükümleriyle uyumludur."
     },
     {
       "number": "8",
-      "title": "Politikada Değişiklikler",
-      "content": "Politikayı güncelleyebiliriz; değişiklikler e-posta ile bildirilir. Kullanıma devam etmek değişiklikleri kabul ettiğiniz anlamına gelir."
+      "title": "Politikadaki Değişiklikler",
+      "content": "Bu politikayı güncelleyebiliriz; e-posta ile bilgilendirileceksiniz. Hizmetleri kullanmaya devam etmeniz değişiklikleri kabul ettiğiniz anlamına gelir."
     },
     {
       "number": "9",
       "title": "Uyumluluk",
-      "content": "GDPR, UK GDPR, CCPA ve Apple App Store Kurallarına (özellikle 5.4) tam uyumluyuz. Verileri minimumda tutar, rıza alır ve yanıltıcı iddia yapmayız."
+      "content": "GDPR (AB için IP/saat dilimini açık şekilde kişisel veri olarak kabul ederek), Birleşik Krallık veri yasaları (Brexit sonrası UK GDPR), CCPA (Kaliforniya için gerekli haklarla) ve Apple App Store Yönergeleriyle (örn. 5.4: veri paylaşımı/satışı yok, tüm veri uygulamalarının net açıklanması) uyum içindeyiz. Verileri minimize eder, rıza alır ve yanıltıcı beyanlardan kaçınırız. Küresel kullanıcılar için veri denetimleri ve şifreleme gibi en iyi uygulamaları takip ederiz."
     },
     {
       "number": "10",
       "title": "İletişim",
-      "content": "support@quickping.net veya owner@boratech.uk<br>Unit 13 Freeland Park, Wareham Road, Lytchett Matravers, Poole, BH16 6FA, UK<br>+447477232441"
+      "content": "Yasal sorular için [support_email] veya [legal_email]. Unit 13 Freeland Park, Wareham Road, Lytchett Matravers, Poole, BH16 6FA, UK. +447477232441."
     }
   ]
 }

@@ -8,8 +8,26 @@
   <link rel="stylesheet" href="style.css?v=2025" />
   
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Vazirmatn:wght@400;500;600;700&display=swap" rel="stylesheet">
-  
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css" />
+  
+  <style>
+    .text-link {
+      color: #4e9aff;
+      text-decoration: underline;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .text-link:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+    .dark-mode .text-link {
+      color: #6eb5ff;
+    }
+    .dark-mode .text-link:hover {
+      color: #a0d8ff;
+    }
+  </style>
 </head>
 <body class="dark-mode">
 
@@ -29,10 +47,10 @@
         <button data-lang="fa" class="lang-option"><span class="fi fi-ir"></span> فارسی</button>
         <button data-lang="ar" class="lang-option"><span class="fi fi-sa"></span> العربية</button>
         <button data-lang="ur" class="lang-option"><span class="fi fi-pk"></span> اردو</button>
-        <button data-lang="ru" class="lang-option"><span class="fi fi-ru"></span> Русский</button>
+        <!-- <button data-lang="ru" class="lang-option"><span class="fi fi-ru"></span> Русский</button> -->
         <button data-lang="tr" class="lang-option"><span class="fi fi-tr"></span> Türkçe</button>
-        <button data-lang="ch" class="lang-option"><span class="fi fi-cn"></span> 中文</button>
-        <button data-lang="du" class="lang-option"><span class="fi fi-nl"></span> Nederlands</button>
+        <!-- <button data-lang="ch" class="lang-option"><span class="fi fi-cn"></span> 中文</button> -->
+        <!-- <button data-lang="du" class="lang-option"><span class="fi fi-nl"></span> Nederlands</button> -->
       </div>
     </div>
 
@@ -59,6 +77,26 @@
   </div>
 
   <script>
+    const LINKS = {
+      privacy_policy_link: `<a href="https://dl.quickping.net/legal.html?page=privacy" target="_blank" rel="noopener" class="text-link">Privacy Policy</a>`,
+      support_email: `<a href="mailto:support@quickping.net" class="text-link">support@quickping.net</a>`,
+      legal_email: `<a href="mailto:owner@boratech.uk" class="text-link">owner@boratech.uk</a>`,
+      singbox_link: `<a href="https://github.com/SagerNet/sing-box" target="_blank" rel="noopener" class="text-link">Sing-Box</a>`
+    };
+
+    function replacePlaceholders(text) {
+      if (!text) return text;
+      let result = text;
+      for (const [key, value] of Object.entries(LINKS)) {
+        result = result.replace(new RegExp(`\\[${key}\\]`, 'g'), value);
+      }
+      return result;
+    }
+
+    function safeSetHTML(el, html) {
+      el.innerHTML = replacePlaceholders(html || '');
+    }
+
     const urlParams = new URLSearchParams(window.location.search);
     const pageType = urlParams.get('page') || 'terms';
     const validPages = ['terms', 'privacy'];
@@ -88,17 +126,20 @@
           ? "'Vazirmatn', sans-serif"
           : "'Inter', sans-serif";
 
-        document.getElementById('page-title').textContent = data.page_title;
-        document.getElementById('last-updated').textContent = data.last_updated;
+        document.getElementById('page-title').textContent = data.page_title || 'QuickPing VPN';
+        document.getElementById('last-updated').textContent = data.last_updated || '';
 
         const contentEl = document.getElementById('content');
-        contentEl.innerHTML = '';
+        contentEl.innerHTML = '<div class="loading">Loading...</div>';
 
         if (data.introduction) {
           const intro = document.createElement('p');
           intro.className = 'intro';
-          intro.innerHTML = data.introduction;
+          safeSetHTML(intro, data.introduction);
+          contentEl.innerHTML = '';
           contentEl.appendChild(intro);
+        } else {
+          contentEl.innerHTML = '';
         }
 
         data.sections.forEach(sec => {
@@ -111,7 +152,7 @@
 
           if (sec.content) {
             const p = document.createElement('p');
-            p.innerHTML = sec.content;
+            safeSetHTML(p, sec.content);
             section.appendChild(p);
           }
 
@@ -119,7 +160,7 @@
             const ul = document.createElement('ul');
             sec.list.forEach(item => {
               const li = document.createElement('li');
-              li.innerHTML = item;
+              safeSetHTML(li, item);
               ul.appendChild(li);
             });
             section.appendChild(ul);
@@ -128,10 +169,11 @@
           if (sec.subsections) {
             sec.subsections.forEach(sub => {
               const subTitle = document.createElement('h3');
-              subTitle.textContent = sub.subtitle;
+              subTitle.textContent = sub.subtitle || sub.title;
               section.appendChild(subTitle);
+
               const subP = document.createElement('p');
-              subP.innerHTML = sub.content;
+              safeSetHTML(subP, sub.content);
               section.appendChild(subP);
             });
           }
@@ -139,7 +181,7 @@
           if (sec.footer) {
             const footer = document.createElement('p');
             footer.className = 'section-footer';
-            footer.innerHTML = sec.footer;
+            safeSetHTML(footer, sec.footer);
             section.appendChild(footer);
           }
 
@@ -149,7 +191,7 @@
         if (data.closing) {
           const closing = document.createElement('p');
           closing.className = 'closing';
-          closing.innerHTML = data.closing;
+          safeSetHTML(closing, data.closing);
           contentEl.appendChild(closing);
         }
 
@@ -157,7 +199,8 @@
         console.error(err);
         document.getElementById('content').innerHTML = `
           <p style="color:red; text-align:center; padding:2rem;">
-            Unable to load content. Check console for details.<br><small>${path}</small>
+            Unable to load content. Check console for details.<br>
+            <small>${path}</small>
           </p>`;
       }
     }
@@ -196,7 +239,6 @@
 
         langOptions.forEach(o => o.classList.remove('active'));
         opt.classList.add('active');
-
         langDropdown.classList.remove('show');
       });
     });
