@@ -359,6 +359,7 @@ body {
 
 /* Footer */
 .footer {
+  direction: ltr;
   text-align: center;
   padding: 2.5rem 1rem;
   background: #0f172a00;

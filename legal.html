@@ -12,7 +12,7 @@
 
 
   <script>
-    const SITE_VERSION = "20251127.6";
+    const SITE_VERSION = "20251127.7";
     if (localStorage.getItem('siteVersion') !== SITE_VERSION) {
       localStorage.setItem('siteVersion', SITE_VERSION);
       if ('caches' in window) caches.keys().then(n=>n.forEach(c=>caches.delete(c)));
@@ -20,7 +20,7 @@
     }
   </script>
 
-  <link rel="stylesheet" href="style.css?v=20251127.6" />
+  <link rel="stylesheet" href="style.css?v=20251127.7" />
 
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Vazirmatn:wght@400;500;600;700&display=swap"
@@ -97,7 +97,7 @@
     </main>
 
     <footer class="footer">
-      <p>© 2025 Boratech. All rights reserved.</p>
+      <p>© 2025 <a href="https://boratech.uk" target="_blank" rel="noopener" class="text-link">Boratech</a>. All rights reserved.</p>
       <p>Contact: <a href="mailto:support@quickping.net">support@quickping.net</a></p>
     </footer>
   </div>
