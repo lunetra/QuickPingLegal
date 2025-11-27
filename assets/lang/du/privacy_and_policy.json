@@ -1,78 +1,84 @@
 {
-  "page_title": "Privacybeleid QuickPing VPN",
+  "page_title": "QuickPing VPN Privacybeleid",
   "last_updated": "Laatst bijgewerkt: 25 november 2025",
-  "introduction": "QuickPing VPN (hierna “wij”, “ons” of “onze”), beheerd door Boratech, zet zich in voor de bescherming van uw privacy. Dit privacybeleid legt uit hoe wij uw persoonsgegevens verzamelen, gebruiken, delen en beveiligen wanneer u onze Diensten gebruikt. Door de Diensten te gebruiken stemt u in met deze praktijken, inclusief het gebruik van uw IP-adres en apparaattijdzone voor service-optimalisatie zoals hieronder beschreven. Voor vragen kunt u contact opnemen via support@quickping.net.",
+  "introduction": "QuickPing VPN (\"wij\", \"ons\" of \"onze\"), beheerd door [boratech_link], zet zich in voor de bescherming van uw privacy. Dit Privacybeleid legt uit hoe wij uw persoonsgegevens verzamelen, gebruiken, delen en beschermen wanneer u onze Diensten gebruikt. Door de Diensten te gebruiken, stemt u in met deze praktijken, inclusief het gebruik van uw IP-adres en de tijdzone van uw apparaat voor service-optimalisatie zoals hieronder beschreven. Voor vragen kunt u contact opnemen via [support_email].",
 
   "sections": [
     {
       "number": "1",
-      "title": "Welke gegevens verzamelen wij",
-      "content": "Wij verzamelen een minimum aan gegevens conform de dataminimalisatieprincipes van de GDPR, Britse wetgeving, CCPA en de App Store-richtlijnen van Apple:",
+      "title": "Gegevens die wij verzamelen",
+      "content": "Wij verzamelen minimale gegevens in overeenstemming met het principe van dataminimalisatie onder de GDPR, Britse gegevenswetten, CCPA en de richtlijnen van de Apple App Store:",
       "list": [
-        "<strong>Accountgegevens:</strong> e-mailadres en wachtwoord (versleuteld met SHA256/base64) voor registratie en inloggen.",
-        "<strong>IP bij registratie:</strong> uw IP-adres bij aanmelding om misbruik te voorkomen (bijv. meerdere gratis accounts); wordt verwijderd na verificatie of minimaal bewaard.",
-        "<strong>Optimalisatiegegevens:</strong> realtime IP-adres (alleen tijdens het welkomstscherm voor het samenstellen van een locatie-gebaseerde serverlijst) en apparaattijdzone (automatisch gedetecteerd uit apparaatinstellingen voor het kiezen van de juiste API-domeinen). Beide worden niet opgeslagen op onze servers – alleen realtime verwerkt.",
-        "<strong>Apparaat- en crashgegevens:</strong> via Sentry voor foutopsporing (o.a. model, OS-versie, batterijniveau, geheugengebruik, app-versie, crashlogs, IP, land/stad). Deze gegevens worden geanonimiseerd en uitsluitend gebruikt voor foutoplossing.",
-        "<strong>Betalingsgegevens:</strong> volledig afgehandeld door Apple; wij bewaren geen kaartgegevens."
+        "<strong>Accountinformatie:</strong> E-mailadres en wachtwoord (versleuteld met SHA256/base64) voor registratie en inloggen.",
+        "<strong>Registratie-IP:</strong> Uw IP-adres bij aanmelding om misbruik te voorkomen (bijv. meerdere gratis accounts); verwijderd na verificatie of minimaal bewaard indien nodig.",
+        "<strong>Optimalisatiegegevens:</strong> Realtime IP-adres (tijdelijk opgevraagd tijdens het splash screen bij het opstarten van de app voor het aanpassen van de VPN-serverlijst op basis van locatie) en apparaat-tijdzone (automatisch gedetecteerd uit de apparaatinstellingen voor selectie van API-endpoints). Geen van beide wordt op servers opgeslagen; alleen realtime verwerkt en niet bewaard.",
+        "<strong>Apparaat- en crashinformatie:</strong> Via [sentry_link] voor debugging (bijv. apparaatmodel, OS-versie, batterijniveau, geheugengebruik, appversie, crashlogs, IP-adres, geografie zoals land/stad). Dit wordt geanonimiseerd en uitsluitend gebruikt voor het oplossen van fouten. Volledige lijst: app_memory_limit, app_memory_usage, app_peak_memory, arch, battery_level, brand, charging, connection_type, cpu_description, device_type, dist, environment, family, free_storage, handled, id, interface_type, language, level, low_memory, manufacturer, mechanism, memory_size, model, model_id, name, online, orientation, processor_count, release, screen_density, screen_dpi, screen_resolution, simulator, storage_size, system_free_memory, thermal_state, timezone, user ID/IP/geografie.",
+        "<strong>Betalingsgegevens:</strong> Worden afgehandeld door Apple; wij slaan geen kaartgegevens op."
       ],
-      "footer": "Er wordt geen toegang tot locatie, gezondheidsgegevens, browsegeschiedenis, verkeer of verbindingslogs verzameld of opgeslagen (zelfs niet tijdelijk). Wij gebruiken gegevens niet voor tracking, profilering of andere doeleinden dan hier expliciet vermeld."
+      "footer": "Er wordt geen toegang tot locatie, gezondheidsgegevens, browsegeschiedenis, verkeer of verbindingslogs verzameld of opgeslagen (zelfs niet tijdelijk). Wij gebruiken gegevens niet voor tracking, profilering of enig ander doel dan expliciet vermeld."
     },
     {
       "number": "2",
       "title": "Hoe wij uw gegevens gebruiken",
-      "content": "Wij gebruiken gegevens uitsluitend voor het leveren van de Diensten, op basis van uw toestemming (via deze Voorwaarden en dit Beleid) en gerechtvaardigde belangen (o.a. servicekwaliteit en beveiliging):",
+      "content": "Wij gebruiken gegevens uitsluitend voor het leveren van de Diensten, op basis van toestemming (via deze Voorwaarden en dit Beleid) en gerechtvaardigde belangen (bijv. servicekwaliteit en beveiliging):",
       "list": [
-        "Het leveren en onderhouden van de Diensten (authenticatie, VPN-verbinding, misbruikcontroles).",
-        "Service-optimalisatie: realtime IP voor het samenstellen van serverlijsten en tijdzone voor het kiezen van snellere/stabielere API-domeinen.",
-        "Foutopsporing en verbeteringen (Sentry-crashrapporten).",
-        "Het voldoen aan wettelijke verplichtingen (bijv. fraudebestrijding)."
+        "Voor het leveren en onderhouden van de Diensten (bijv. authenticatie, VPN-connectiviteit, anti-misbruikcontroles).",
+        "Voor service-optimalisatie: Het gebruik van realtime IP-locatie om VPN-serverlijsten aan te passen (bijv. verschillende aantallen/landen op basis van de locatie van de gebruiker) en de apparaat-tijdzone om geschikte API-domeinen/servers te selecteren voor betere snelheid en stabiliteit. Deze verwerking is essentieel voor het leveren van optimale diensten en is eerlijk voor alle gebruikers, zonder discriminatie.",
+        "Voor debugging en verbeteringen ([sentry_link]-crashes).",
+        "Om te voldoen aan wettelijke verplichtingen (bijv. fraudepreventie)."
       ],
-      "footer": "Geen verkoop, delen of gebruik voor marketing, reclame of andere doeleinden van derden – volledig in lijn met Apple Guideline 5.4."
+      "footer": "Geen verkoop, deling of gebruik van gegevens voor marketing, reclame of doeleinden van derden, in lijn met Apple-richtlijn 5.4."
     },
     {
       "number": "3",
       "title": "No-Logs-beleid",
-      "content": "Wij hanteren een strikt no-logs-beleid: er worden geen online activiteiten, bezochte websites, verkeersgegevens of verbindingslogs opgeslagen – zelfs niet voor een seconde. Tijdzone en IP voor optimalisatie worden niet gelogd of bewaard; alleen realtime verwerkt. Servers gebruiken Sing-Box-protocollen met volledige versleuteling; gegevens zijn geanonimiseerd en worden nooit opgeslagen. Wij voeren regelmatig interne audits uit om naleving te waarborgen."
+      "content": "Wij hanteren een strikt no-logs-beleid: Geen opslag van uw online activiteiten, bezochte sites, verkeersgegevens of enige logs – zelfs geen seconde. Tijdzone en IP voor optimalisatie worden niet gelogd of bewaard; alleen realtime verwerkt. Servers gebruiken [singbox_link]-protocollen voor encryptie; gegevens worden geanonimiseerd en nooit bewaard. Wij voeren interne audits uit om naleving te garanderen, hoewel er momenteel geen externe certificering is."
     },
     {
       "number": "4",
-      "title": "Delen van gegevens",
+      "title": "Gegevensdeling",
       "list": [
-        "<strong>Derden:</strong> alleen Sentry (crashrapporten) en Google Login SDK (authenticatie). Geen verkoop of delen van gegevens.",
-        "<strong>Wettelijke verplichtingen:</strong> alleen bij een geldig gerechtelijk bevel na controle op rechtmatigheid.",
-        "<strong>Bedrijfstransacties:</strong> bij fusie of overname."
+        "<strong>Derden:</strong> [sentry_link] voor crashes (zie hun beleid); [google_login_sdk_link] voor authenticatie. Er worden geen gegevens verkocht of gedeeld voor enig doel.",
+        "<strong>Wettelijke vereisten:</strong> Wij kunnen gegevens verstrekken indien wettelijk vereist (bijv. gerechtelijk bevel), maar alleen na verificatie van de legaliteit.",
+        "<strong>Bedrijfstransacties:</strong> In geval van fusie/verkoop."
       ],
-      "footer": "Internationale doorgiften zijn beveiligd met standaard contractuele clausules. Wij delen geen gegevens met derden (inclusief AI-aanbieders) zonder uw uitdrukkelijke toestemming."
+      "footer": "Internationale doorgiften worden beschermd door standaard contractuele clausules (bijv. GDPR-conform). Wij delen geen gegevens met derden, inclusief AI-aanbieders, zonder expliciete toestemming, conform Apple-richtlijnen."
     },
     {
       "number": "5",
       "title": "Beveiligingsmaatregelen",
-      "content": "Gegevens worden tijdens transport en opslag versleuteld (o.a. met VMess-protocollen). Wij passen firewalls, toegangscontroles en regelmatige beveiligingsaudits toe conform artikel 32 GDPR en CCPA-vereisten. Geen enkel systeem is echter 100 % veilig."
+      "content": "Gegevens worden versleuteld tijdens overdracht en in rust (met gebruik van protocollen zoals VMess). Wij implementeren firewalls, toegangscontroles en regelmatige beveiligingsaudits om gegevens te beschermen, in overeenstemming met artikel 32 van de GDPR en de beveiligingsvereisten van de CCPA. Geen enkel systeem is echter 100% veilig."
     },
     {
       "number": "6",
       "title": "Uw rechten",
-      "content": "Wij respecteren uw rechten onder de toepasselijke wetgeving: toegang, correctie of verwijdering van uw gegevens via accountinstellingen. Volledige ondersteuning van EU/VK (GDPR) en Californië (CCPA) rechten. E-mailverzoeken worden binnen 30–45 dagen beantwoord. Gegevens worden bewaard zolang het account actief is + 2 jaar om juridische redenen."
+      "content": "Wij respecteren uw rechten onder toepasselijke wetgeving:",
+      "list": [
+        "Toegang, correctie of verwijdering van uw gegevens via accountinstellingen (verwijderen van het account verwijdert alles, inclusief IP).",
+        "Voor EU/VK-gebruikers (GDPR/UK GDPR): Rechten op inzage, rectificatie, verwijdering, beperking, overdraagbaarheid en bezwaar (bijv. tegen IP-/tijdzoneverwerking, hoewel essentieel voor de dienst; bezwaar kan functionaliteit beperken). Verwerkingsgrondslag: toestemming en gerechtvaardigd belang (dienstverlening). Wij voldoen zonder een aangewezen Functionaris Gegevensbescherming, omdat onze verwerking niet grootschalig is, maar zullen er een aanstellen indien vereist.",
+        "Voor CA-gebruikers (CCPA): Rechten om te weten, te verwijderen, zich af te melden voor verkoop (geen vindt plaats) en non-discriminatie. E-mail voor verzoeken."
+      ],
+      "footer": "Bewaartermijn: Gegevens worden bewaard zolang het account actief is + 2 jaar om juridische redenen; daarna verwijderd. Om rechten uit te oefenen, e-mail ons; wij reageren binnen 30-45 dagen conform de wet."
     },
     {
       "number": "7",
       "title": "Privacy van kinderen",
-      "content": "De Diensten zijn niet gericht op personen jonger dan 16 jaar. Wij verzamelen bewust geen gegevens van minderjarigen. Volledig conform COPPA en de kindbepalingen van de GDPR."
+      "content": "Diensten zijn niet gericht op personen onder de 16 jaar. Wij verzamelen niet bewust gegevens van minderjarigen. De guardian-functie maakt blokkering mogelijk, maar ouderlijk toezicht wordt aanbevolen. Conform COPPA en de kindbepalingen van de GDPR."
     },
     {
       "number": "8",
-      "title": "Wijzigingen in dit beleid",
-      "content": "Wij kunnen dit beleid wijzigen; u wordt per e-mail geïnformeerd. Voortgezet gebruik houdt acceptatie van de wijzigingen in."
+      "title": "Wijzigingen in het beleid",
+      "content": "Wij kunnen dit bijwerken; u wordt via e-mail op de hoogte gebracht. Voortgezet gebruik betekent acceptatie van de wijzigingen."
     },
     {
       "number": "9",
       "title": "Naleving",
-      "content": "Wij voldoen volledig aan GDPR, UK GDPR, CCPA en de App Store-richtlijnen van Apple (o.a. 5.4). Wij minimaliseren gegevens, verkrijgen toestemming en vermijden misleidende claims."
+      "content": "Wij voldoen aan de GDPR (voor de EU, waarbij IP/tijdzone als persoonsgegevens worden behandeld met expliciete openbaarmaking), Britse gegevenswetten (UK GDPR na Brexit), de CCPA (voor CA, met vereiste rechten) en de richtlijnen van de Apple App Store (bijv. 5.4: geen gegevensdeling/verkoop, duidelijke openbaarmaking van alle gegevenspraktijken). Wij minimaliseren gegevens, verkrijgen toestemming en zorgen dat er geen misleidende claims zijn. Voor wereldwijde gebruikers houden wij ons aan best practices zoals data-audits en encryptie."
     },
     {
       "number": "10",
       "title": "Contact",
-      "content": "support@quickping.net of owner@boratech.uk<br>Unit 13 Freeland Park, Wareham Road, Lytchett Matravers, Poole, BH16 6FA, UK<br>+447477232441"
+      "content": "[support_email] of [legal_email] для juridische vragen. Unit 13 Freeland Park, Wareham Road, Lytchett Matravers, Poole, BH16 6FA, UK. +447477232441."
     }
   ]
 }

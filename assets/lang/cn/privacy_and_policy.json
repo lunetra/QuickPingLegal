@@ -1,0 +1,84 @@
+{
+  "page_title": "QuickPing VPN 隐私政策",
+  "last_updated": "最后更新：2025 年 11 月 25 日",
+  "introduction": "QuickPing VPN（\"我们\"、\"我们方\" 或 \"本公司\"）由 [boratech_link] 运营，致力于保护您的隐私。本隐私政策解释了当您使用我们的服务时，我们如何收集、使用、共享和保护您的个人数据。通过使用本服务，您即表示同意这些做法，包括如下所述的使用您的 IP 地址和设备时区以进行服务优化。如有疑问，请联系 [support_email]。",
+
+  "sections": [
+    {
+      "number": "1",
+      "title": "我们收集的数据",
+      "content": "我们遵循 GDPR、英国数据法、CCPA 以及 Apple App Store 指南中的数据最小化原则，仅收集最低限度的数据：",
+      "list": [
+        "<strong>账户信息：</strong> 用于注册和登录的电子邮箱和密码（使用 SHA256/base64 加密）。",
+        "<strong>注册 IP：</strong> 注册时的 IP 地址，用于防止滥用行为（例如创建多个免费账户）；在验证后删除，或在必要时尽量短期保留。",
+        "<strong>优化数据：</strong> 实时 IP 地址（在应用启动时的启动画面短暂获取，用于根据用户位置定制 VPN 服务器列表）以及设备时区（从设备设置中自动检测，用于选择 API 端点）。这两项数据均不会存储在服务器上，仅实时处理，不会被保留。",
+        "<strong>设备和崩溃信息：</strong> 通过 [sentry_link] 用于调试（例如：设备型号、操作系统版本、电池电量、内存使用情况、应用版本、崩溃日志、IP 地址、国家/城市等地理信息）。这些数据已匿名化，仅用于错误修复。完整列表：app_memory_limit，app_memory_usage，app_peak_memory，arch，battery_level，brand，charging，connection_type，cpu_description，device_type，dist，environment，family，free_storage，handled，id，interface_type，language，level，low_memory，manufacturer，mechanism，memory_size，model，model_id，name，online，orientation，processor_count，release，screen_density，screen_dpi，screen_resolution，simulator，storage_size，system_free_memory，thermal_state，timezone，user ID/IP/地理信息。",
+        "<strong>支付数据：</strong> 由 Apple 处理；我们不存储任何银行卡信息。"
+      ],
+      "footer": "我们不会收集或存储位置数据、健康数据、浏览历史、网络流量或连接日志（即使是临时也不会）。我们不会将数据用于追踪、用户画像或任何未明确说明的用途。"
+    },
+    {
+      "number": "2",
+      "title": "我们如何使用您的数据",
+      "content": "我们仅基于您的同意（通过本条款和政策）以及合法利益（如服务质量和安全性）来使用数据：",
+      "list": [
+        "用于提供和维护服务（例如身份验证、VPN 连接、防滥用检测）。",
+        "用于服务优化：使用实时 IP 位置定制 VPN 服务器列表（例如根据用户所在国家展示不同数量或国家的服务器），以及使用设备时区选择最优 API 域名/服务器以提升速度和稳定性。此处理对于提供最佳服务是必需且公平的，不存在任何歧视。",
+        "用于调试和改进（[sentry_link] 崩溃分析）。",
+        "用于遵守法律义务（例如防止欺诈）。"
+      ],
+      "footer": "我们不会出售、共享或将您的数据用于营销、广告或任何第三方用途，符合 Apple 指南 5.4。"
+    },
+    {
+      "number": "3",
+      "title": "无日志政策",
+      "content": "我们遵守严格的无日志政策：不存储您的在线活动、访问网站、流量数据或任何类型的日志——哪怕是一秒钟。用于优化的时区和 IP 数据既不会记录，也不会存储，只进行实时处理。服务器使用 [singbox_link] 协议进行加密；数据已匿名化且永不保留。我们定期进行内部审计以确保合规，但目前尚无第三方认证。"
+    },
+    {
+      "number": "4",
+      "title": "数据共享",
+      "list": [
+        "<strong>第三方：</strong> 使用 [sentry_link] 收集崩溃数据（参见其隐私政策）；使用 [google_login_sdk_link] 进行身份验证。我们不会出于任何目的出售或共享数据。",
+        "<strong>法律要求：</strong> 若法律要求（如法院命令），我们可能会披露，但仅在验证其合法性后执行。",
+        "<strong>公司交易：</strong> 合并或出售情况下的必要披露。"
+      ],
+      "footer": "国际数据传输受标准合同条款保护（例如符合 GDPR）。未经明确同意，我们不会与第三方（包括 AI 服务提供商）共享数据，符合 Apple 指南。"
+    },
+    {
+      "number": "5",
+      "title": "安全措施",
+      "content": "数据在传输和存储过程中均经过加密（例如使用 VMess 协议）。我们实施防火墙、访问控制和定期安全审计以保护数据，符合 GDPR 第 32 条和 CCPA 的安全要求。但任何系统都无法做到 100% 安全。"
+    },
+    {
+      "number": "6",
+      "title": "您的权利",
+      "content": "我们尊重适用法律下的您的权利：",
+      "list": [
+        "您可以通过账户设置访问、更正或删除您的数据（删除账户将删除所有数据，包括 IP）。",
+        "对于欧盟/英国用户（GDPR/英国 GDPR）：您有权访问、更正、删除、限制处理、数据可携带以及反对处理（例如反对 IP/时区处理；但该处理是服务必需的，反对可能会限制功能）。处理依据：您的同意和合法利益。由于我们未进行大规模处理，暂未设立数据保护官，但如有需要将会任命。",
+        "对于加州用户（CCPA）：您有知情权、删除权、选择拒绝出售权（我们不存在出售行为）及非歧视权。请通过电子邮件申请。"
+      ],
+      "footer": "数据保留：数据在账户有效期间保留，并在账户关闭后出于法律原因再保留 2 年，之后删除。行使权利请发送邮件联系我们；我们将在 30–45 天内依法回应。"
+    },
+    {
+      "number": "7",
+      "title": "儿童隐私",
+      "content": "本服务不面向 16 岁以下用户。我们不会故意收集未成年人的数据。应用内提供监护功能用于限制，但仍建议家长监督使用。符合 COPPA 和 GDPR 儿童条款。"
+    },
+    {
+      "number": "8",
+      "title": "政策变更",
+      "content": "我们可能会更新本政策；更新将通过电子邮件通知。继续使用即视为接受变更。"
+    },
+    {
+      "number": "9",
+      "title": "合规",
+      "content": "我们遵守 GDPR（针对欧盟用户，将 IP/时区视为个人数据并进行明确披露）、英国数据法（脱欧后的英国 GDPR）、CCPA（针对加州用户，提供其所需的权利）以及 Apple App Store 指南（例如 5.4：不共享/出售数据，清楚披露所有数据行为）。我们坚持数据最小化，获取用户同意，并确保无误导性声明。对于全球用户，我们遵循最佳实践，如数据审计和加密。"
+    },
+    {
+      "number": "10",
+      "title": "联系方式",
+      "content": "法律或支持问题请联系：[support_email] 或 [legal_email]。地址：Unit 13 Freeland Park, Wareham Road, Lytchett Matravers, Poole, BH16 6FA, UK. +447477232441."
+    }
+  ]
+}

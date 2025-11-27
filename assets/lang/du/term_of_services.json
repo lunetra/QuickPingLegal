@@ -1,94 +1,94 @@
 {
-  "page_title": "Gebruiksvoorwaarden QuickPing VPN",
+  "page_title": "QuickPing VPN Gebruiksvoorwaarden",
   "last_updated": "Laatst bijgewerkt: 25 november 2025",
-  "introduction": "Deze Gebruiksvoorwaarden regelen uw toegang tot en gebruik van de QuickPing VPN-diensten (mobiele apps, website en gerelateerde software/functies), aangeboden door QuickPing en beheerd door Boratech. Door de Diensten te gebruiken accepteert u deze Voorwaarden en ons Privacybeleid (beschikbaar op https://dl.quickping.net/legal.html?page=privacy). Indien u niet akkoord gaat, maak dan geen gebruik van de Diensten.",
+  "introduction": "Deze Gebruiksvoorwaarden (\"Voorwaarden\") regelen uw toegang tot en gebruik van de QuickPing VPN-diensten, inclusief onze mobiele applicaties, website en alle gerelateerde software of functies (gezamenlijk de \"Diensten\") die worden aangeboden door QuickPing en beheerd door [boratech_link] (\"wij,\" \"ons\" of \"onze\"). Door toegang te krijgen tot of gebruik te maken van de Diensten, gaat u akkoord met deze Voorwaarden en ons Privacybeleid, beschikbaar via [privacy_policy_link]. Als u niet akkoord gaat, maak dan geen gebruik van de Diensten.",
 
   "sections": [
     {
       "number": "1",
-      "title": "Acceptatie en geschiktheid",
-      "content": "U moet minimaal 16 jaar oud zijn (of de meerderjarigheidsleeftijd in uw rechtsgebied hebben bereikt) om de Diensten te mogen gebruiken. Door gebruik te maken van de Diensten verklaart u aan dit vereiste te voldoen en zich te houden aan alle toepasselijke wetten. Indien u namens een rechtspersoon accepteert, garandeert u bevoegd te zijn die rechtspersoon te binden."
+      "title": "Acceptatie en Toelaatbaarheid",
+      "content": "U moet minimaal 16 jaar oud zijn (of de meerderjarige leeftijd in uw rechtsgebied hebben bereikt) om de Diensten te gebruiken. Door gebruik te maken van de Diensten verklaart u dat u aan deze vereiste voldoet en akkoord gaat met alle toepasselijke wet- en regelgeving. Indien u deze Voorwaarden accepteert namens een rechtspersoon, garandeert u dat u bevoegd bent om deze rechtspersoon te binden."
     },
     {
       "number": "2",
-      "title": "Wijzigingen in de Voorwaarden",
-      "content": "Wij kunnen deze Voorwaarden te allen tijde aanpassen. Wijzigingen worden op onze website gepubliceerd en per e-mail aan u meegedeeld. Voortgezet gebruik na wijzigingen houdt acceptatie ervan in."
+      "title": "Wijzigingen van de Voorwaarden",
+      "content": "Wij kunnen deze Voorwaarden op elk moment bijwerken. Wijzigingen worden op onze website gepubliceerd en wij zullen u via e-mail op de hoogte stellen. Uw voortgezette gebruik van de Diensten na wijzigingen betekent aanvaarding ervan."
     },
     {
       "number": "3",
-      "title": "Account aanmaken en beveiliging",
-      "content": "Voor gebruik van de Diensten dient u een account aan te maken met een geldig e-mailadres en wachtwoord. U bent verantwoordelijk voor de vertrouwelijkheid van uw inloggegevens en voor alle activiteiten onder uw account. Meld onbevoegd gebruik onmiddellijk. Wij behouden ons het recht voor accounts bij overtreding te schorsen of te beëindigen."
+      "title": "Account aanmaken en Beveiliging",
+      "content": "Om de Diensten te gebruiken, moet u een account aanmaken met een geldig e-mailadres en wachtwoord. U bent verantwoordelijk voor het vertrouwelijk houden van uw accountgegevens en voor alle activiteiten die onder uw account plaatsvinden. Stel ons onmiddellijk op de hoogte van ongeautoriseerde toegang. Wij behouden ons het recht voor om uw account te beëindigen of te schorsen bij overtredingen."
     },
     {
       "number": "4",
-      "title": "Abonnementen en betalingen",
-      "content": "De Diensten werken op abonnementsbasis. Na registratie ontvangt u maandelijks 2 GB gratis data voor testdoeleinden (één gratis account per IP ter voorkoming van misbruik). Betaalde plannen: maandelijks $2,99 en jaarlijks $24,99 met onbeperkte data via Apple In-App Purchase. Abonnementen worden automatisch verlengd tenzij opgezegd via uw Apple-account. Wij verlenen geen directe refunds; alle opzeggingen en refunds verlopen volgens het Apple-beleid. Prijzen kunnen met voorafgaande kennisgeving wijzigen."
+      "title": "Abonnementen en Betalingen",
+      "content": "De Diensten zijn gebaseerd op abonnementen. Na registratie ontvangt u maandelijks 2GB gratis data voor testdoeleinden (beperkt tot één gratis account per IP om misbruik te voorkomen). Betaalde abonnementen omvatten maandelijkse ($2.99) en jaarlijkse ($24.99) abonnementen met onbeperkte data, verwerkt via Apple In-App Purchase. Abonnementen worden automatisch verlengd, tenzij u deze opzegt via de instellingen van uw Apple-account. Wij bieden geen directe restituties; alle annuleringen en restituties worden afgehandeld volgens het abonnementsbeleid van Apple. Prijzen kunnen met voorafgaande kennisgeving worden gewijzigd."
     },
     {
       "number": "5",
-      "title": "Servicefuncties",
+      "title": "Dienstfuncties",
       "subsections": [
         {
-          "subtitle": "VPN-verbinding",
-          "content": "Wij bieden VPN-diensten via protocollen als VMess, VLESS, Reality en Hysteria (Sing-Box). Functies: serverselectie, split tunneling (eigen IP-lijsten), altijd actieve kill switch en Guardian (optionele blokkade van sociale media, adult content en goksites via openbare GitHub-lijsten)."
+          "subtitle": "VPN-connectiviteit",
+          "content": "Wij bieden VPN-diensten via protocollen zoals VMess, VLESS, Reality en Hysteria via [singbox_link]. Functies omvatten serverselectie, split tunneling (door gebruikers gedefinieerde IP-lijsten voor inclusieve/exclusieve routing), een kill switch (altijd ingeschakeld) en Guardian (optionele blokkering van sociale media, inhoud voor volwassenen en goksites met behulp van openbare GitHub-lijsten)."
         },
         {
           "subtitle": "Geo-optimalisatie",
-          "content": "Voor de best mogelijke snelheid en stabiliteit optimaliseren wij API-endpoints en serverlijsten op basis van uw apparaattijdzone (automatisch gedetecteerd uit instellingen, niet opgeslagen) en actueel IP-adres (alleen opgevraagd bij app-start). Bijvoorbeeld: VK-gebruikers krijgen Britse API-domeinen + ±10 servers; Duitse gebruikers krijgen Duitse domeinen + tot 15 servers uit diverse landen. Dit gebeurt zonder opslag van locatiegegevens – alle gebruikers krijgen een eerlijk en optimaal resultaat."
+          "content": "Om hoogwaardige, locatiegeschikte diensten te leveren, optimaliseren wij API-endpoints en VPN-serverlijsten op basis van de tijdzone van uw apparaat (automatisch gedetecteerd via apparaatinstellingen, niet opgeslagen op servers) en de locatie van uw IP-adres (in realtime opgevraagd tijdens het opstartscherm bij het starten van de app). Bijvoorbeeld: gebruikers in het VK kunnen Britse API-domeinen en een aangepaste lijst van 10 servers ontvangen, terwijl gebruikers in Duitsland Duitse API-domeinen en 15 servers uit verschillende landen kunnen krijgen. Dit zorgt voor betere snelheid, stabiliteit en relevantie zonder locatiegegevens op te slaan. Alle gebruikers ontvangen eerlijke en optimale diensten op basis van hun gedetecteerde locatie."
         },
         {
           "subtitle": "Gebruiksbeperkingen",
-          "content": "Diensten zijn uitsluitend voor persoonlijk, niet-commercieel gebruik. Doorverkoop, delen of commercieel gebruik is verboden. Betaalde plannen bieden onbeperkte data, maar misbruik (bijv. extreem bandbreedtegebruik dat anderen benadeelt) is niet toegestaan. Wij behouden ons het recht voor accounts te beperken of te blokkeren."
+          "content": "Diensten zijn uitsluitend bedoeld voor persoonlijk gebruik. Doorverkoop, delen of commercieel gebruik is niet toegestaan. Betaalde abonnementen bieden onbeperkte data, maar misbruik (bijv. overmatig bandbreedtegebruik dat de servicekwaliteit voor anderen beïnvloedt) is verboden. Wij kunnen accounts beperken of schorsen bij dergelijk misbruik."
         },
         {
           "subtitle": "No-Logs-beleid",
-          "content": "Wij houden geen logs bij van online activiteiten, browsegeschiedenis, verkeer of verbindingen. Zie het Privacybeleid voor details."
+          "content": "Wij loggen of slaan geen online activiteiten, browsegeschiedenis, verkeersgegevens of verbindingslogs op. Zie [privacy_policy_link] voor details."
         }
       ]
     },
     {
       "number": "6",
-      "title": "Verboden activiteiten",
-      "content": "U stemt ermee in de Diensten niet te používat voor:",
+      "title": "Verboden Activiteiten",
+      "content": "U stemt ermee in de Diensten niet te gebruiken voor:",
       "list": [
-        "Illegale activiteiten, waaronder (doch niet beperkt tot) kinderuitbuiting, spam, malwareverspreiding, hacking of auteursrechtinbreuk.",
+        "Illegale activiteiten, waaronder maar niet beperkt tot kinderuitbuiting, spam, verspreiding van malware, hacking of auteursrechtinbreuk.",
         "Intimidatie, bedreiging of schadelijke inhoud.",
-        "Doorverkoop, delen of misbruik van de Diensten (bijv. meerdere gratis accounts).",
-        "Overbelasting van onze infrastructuur of het omzeilen van beperkingen op een manier die lokale wetten schendt."
+        "Doorverkoop, delen of misbruik van de Diensten (bijv. het aanmaken van meerdere gratis accounts).",
+        "Overbelasting van onze infrastructuur of het omzeilen van beperkingen op manieren die lokale wetgeving overtreden."
       ],
-      "footer": "Bij overtreding kunnen wij uw account zonder restitutie opschorten of beëindigen."
+      "footer": "Wij kunnen uw account zonder restitutie schorsen of beëindigen bij overtredingen."
     },
     {
       "number": "7",
-      "title": "Intellectuele eigendom",
-      "content": "Wij verlenen u een beperkte, niet-exclusieve, herroepbare licentie voor persoonlijk gebruik van de Diensten. Het is niet toegestaan onze software te wijzigen, reverse-engineeren of te distribueren. Alle merken en inhoud zijn ons eigendom."
+      "title": "Intellectuele Eigendom",
+      "content": "Wij verlenen u een beperkte, niet-exclusieve, herroepbare licentie om de Diensten voor persoonlijke doeleinden te gebruiken. U mag onze software niet wijzigen, reverse-engineeren of distribueren. Alle handelsmerken en inhoud zijn ons eigendom."
     },
     {
       "number": "8",
-      "title": "Vrijwaring van aansprakelijkheid en beperking van aansprakelijkheid",
-      "content": "De Diensten worden geleverd “as is” zonder garanties. Wij zijn niet aansprakelijk voor indirecte, gevolg- of incidentele schade ontstaan door verkeerd gebruik of gebruikersfouten. Onze totale aansprakelijkheid is beperkt tot het bedrag dat u de afgelopen 12 maanden hebt betaald. Wij zijn niet verantwoordelijk voor overtredingen van lokale wetten of misbruik door gebruikers."
+      "title": "Aansprakelijkheidsuitsluitingen en Beperkingen",
+      "content": "De Diensten worden geleverd \"zoals ze zijn\" zonder enige garanties. Wij wijzen aansprakelijkheid af voor enige schade, inclusief indirecte, gevolg- of incidentele verliezen die voortvloeien uit uw verkeerd gebruik of gebruikersfouten. Onze totale aansprakelijkheid is beperkt tot het bedrag dat u in de afgelopen 12 maanden heeft betaald. Wij zijn niet verantwoordelijk voor overtredingen van lokale wetgeving of misbruik door gebruikers."
     },
     {
       "number": "9",
       "title": "Vrijwaring",
-      "content": "U stemt ermee in ons te vrijwaren tegen alle claims die voortvloeien uit uw gebruik van de Diensten of schending van deze Voorwaarden."
+      "content": "U stemt ermee in ons te vrijwaren van alle claims die voortvloeien uit uw gebruik van de Diensten of schending van deze Voorwaarden."
     },
     {
       "number": "10",
       "title": "Beëindiging",
-      "content": "U kunt uw account op elk moment verwijderen via de app of website; al uw gegevens worden dan permanent gewist. Wij kunnen uw account bij overtreding met of zonder kennisgeving beëindigen."
+      "content": "U kunt uw account op elk moment verwijderen via de app of website, waardoor uw gegevens permanent worden verwijderd. Wij kunnen uw account beëindigen in geval van overtredingen, met of zonder voorafgaande kennisgeving."
     },
     {
       "number": "11",
-      "title": "Toepasselijk recht en geschillenbeslechting",
-      "content": "Deze Voorwaarden vallen onder het recht van Engeland en Wales. Geschillen worden beslecht via bindende arbitrage bij de London Court of International Arbitration (LCIA) of via de rechtbanken in Engeland."
+      "title": "Toepasselijk Recht en Geschillenbeslechting",
+      "content": "Deze Voorwaarden worden beheerst door de wetten van Engeland en Wales. Geschillen worden opgelost via bindende arbitrage bij de London Court of International Arbitration (LCIA) of via de rechtbanken in Engeland."
     },
     {
       "number": "12",
       "title": "Diversen",
-      "content": "Indien een bepaling ongeldig is, blijven de overige bepalingen van kracht. De Engelse versie prevaleert boven vertalingen. Vragen: support@quickping.net; juridische aangelegenheden: owner@boratech.uk"
+      "content": "Indien een bepaling ongeldig is, blijven de overige bepalingen afdwingbaar. De Engelse versie heeft voorrang op vertalingen. Neem contact met ons op via [support_email] voor vragen of via [legal_email] voor juridische aangelegenheden."
     }
   ],
 
-  "closing": "Door verder te gaan accepteert u deze Gebruiksvoorwaarden en ons Privacybeleid."
+  "closing": "Door verder te gaan, gaat u akkoord met deze Voorwaarden en ons [privacy_policy_link]."
 }

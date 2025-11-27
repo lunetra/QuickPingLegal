@@ -1,7 +1,7 @@
 {
   "page_title": "QuickPing VPN Gizlilik Politikası",
   "last_updated": "Son Güncelleme: 25 Kasım 2025",
-  "introduction": "Boratech tarafından işletilen QuickPing VPN (“biz”, “bizi” veya “bizim”), gizliliğinizi korumaya kararlıdır. Bu Gizlilik Politikası, Hizmetlerimizi kullandığınızda kişisel verilerinizi nasıl topladığımızı, kullandığımızı, paylaştığımızı ve koruduğumuzu açıklar. Hizmetleri kullanarak, aşağıda açıklandığı şekilde IP adresinizin ve cihaz saat diliminizin hizmet optimizasyonu için kullanılmasını da içeren bu uygulamaları kabul etmiş olursunuz. Sorularınız için [support_email] ile iletişime geçin.",
+  "introduction": "[boratech_link] tarafından işletilen QuickPing VPN (“biz”, “bizi” veya “bizim”), gizliliğinizi korumaya kararlıdır. Bu Gizlilik Politikası, Hizmetlerimizi kullandığınızda kişisel verilerinizi nasıl topladığımızı, kullandığımızı, paylaştığımızı ve koruduğumuzu açıklar. Hizmetleri kullanarak, aşağıda açıklandığı şekilde IP adresinizin ve cihaz saat diliminizin hizmet optimizasyonu için kullanılmasını da içeren bu uygulamaları kabul etmiş olursunuz. Sorularınız için [support_email] ile iletişime geçin.",
 
   "sections": [
     {
@@ -12,7 +12,7 @@
         "<strong>Hesap Bilgileri:</strong> Kayıt ve giriş için e-posta ve parola (SHA256/base64 ile şifrelenmiş).",
         "<strong>Kayıt IP’si:</strong> Kötüye kullanımı önlemek için (ör. birden fazla ücretsiz hesap) kayıt anındaki IP adresiniz; doğrulamadan sonra silinir veya gerekirse minimum süreyle tutulur.",
         "<strong>Optimizasyon Verileri:</strong> Gerçek zamanlı IP adresi (uygulama açılış splash ekranında anlık olarak sorgulanır ve konuma göre VPN sunucu listesi özelleştirilir) ve cihaz saat dilimi (API uç noktası seçimi için cihaz ayarlarından otomatik alınır). Hiçbiri sunucularda saklanmaz; yalnızca gerçek zamanlı işlenir ve tutulmaz.",
-        "<strong>Cihaz ve Çökme Bilgileri:</strong> Hata ayıklama için Sentry aracılığıyla (örn. cihaz modeli, işletim sistemi sürümü, pil seviyesi, bellek kullanımı, uygulama sürümü, çökme kayıtları, IP adresi, ülke/şehir gibi coğrafya). Bunlar anonimleştirilir ve yalnızca hata çözümü için kullanılır. Tam liste: app_memory_limit, app_memory_usage, app_peak_memory, arch, battery_level, brand, charging, connection_type, cpu_description, device_type, dist, environment, family, free_storage, handled, id, interface_type, language, level, low_memory, manufacturer, mechanism, memory_size, model, model_id, name, online, orientation, processor_count, release, screen_density, screen_dpi, screen_resolution, simulator, storage_size, system_free_memory, thermal_state, timezone, user ID/IP/geography.",
+        "<strong>Cihaz ve Çökme Bilgileri:</strong> Hata ayıklama için [sentry_link] aracılığıyla (örn. cihaz modeli, işletim sistemi sürümü, pil seviyesi, bellek kullanımı, uygulama sürümü, çökme kayıtları, IP adresi, ülke/şehir gibi coğrafya). Bunlar anonimleştirilir ve yalnızca hata çözümü için kullanılır. Tam liste: app_memory_limit, app_memory_usage, app_peak_memory, arch, battery_level, brand, charging, connection_type, cpu_description, device_type, dist, environment, family, free_storage, handled, id, interface_type, language, level, low_memory, manufacturer, mechanism, memory_size, model, model_id, name, online, orientation, processor_count, release, screen_density, screen_dpi, screen_resolution, simulator, storage_size, system_free_memory, thermal_state, timezone, user ID/IP/geography.",
         "<strong>Ödeme Verileri:</strong> Apple tarafından işlenir; kart bilgilerinizi saklamayız."
       ],
       "footer": "Konum erişimi, sağlık verileri, tarama geçmişi, trafik veya bağlantı kayıtları toplanmaz ya da saklanmaz (geçici olarak bile). Verileri izleme, profilleme veya burada açıkça belirtilenler dışında herhangi bir amaç için kullanmayız."
@@ -24,7 +24,7 @@
       "list": [
         "Hizmetleri sağlamak ve sürdürmek (örn. kimlik doğrulama, VPN bağlantısı, kötüye kullanım kontrolleri).",
         "Hizmet optimizasyonu için: Gerçek zamanlı IP konumunu VPN sunucu listelerini özelleştirmek ve cihaz saat dilimini daha iyi hız ve stabilite için uygun API alan adlarını/sunucularını seçmek amacıyla kullanmak. Bu işlem, en iyi hizmeti sunmak için gereklidir ve hiçbir ayrımcılık olmadan tüm kullanıcılar için adildir.",
-        "Hata ayıklama ve iyileştirmeler için (Sentry çökme kayıtları).",
+        "Hata ayıklama ve iyileştirmeler için ([sentry_link] çökme kayıtları).",
         "Yasal yükümlülüklere uymak için (örn. dolandırıcılık önleme)."
       ],
       "footer": "Apple Yönergesi 5.4’e uygun olarak veriler satışa sunulmaz, paylaşılmaz veya pazarlama/reklam ya da üçüncü taraf amaçları için kullanılmaz."
@@ -38,7 +38,7 @@
       "number": "4",
       "title": "Veri Paylaşımı",
       "list": [
-        "<strong>Üçüncü Taraflar:</strong> Çökmeler için Sentry (politikalarına bakınız); kimlik doğrulama için Google Login SDK. Hiçbir veri herhangi bir amaçla satılmaz veya paylaşılmaz.",
+        "<strong>Üçüncü Taraflar:</strong> Çökmeler için [sentry_link] (politikalarına bakınız); kimlik doğrulama için [google_login_sdk_link]. Hiçbir veri herhangi bir amaçla satılmaz veya paylaşılmaz.",
         "<strong>Yasal Gereklilikler:</strong> Yasa gereği talep edilmesi halinde (örn. mahkeme kararı) yalnızca hukuki geçerlilik doğrulandıktan sonra açıklayabiliriz.",
         "<strong>Kurumsal İşlemler:</strong> Birleşme veya satış durumunda."
       ],

@@ -1,7 +1,7 @@
 {
   "page_title": "QuickPing VPN Privacy Policy",
   "last_updated": "Last Updated: November 25, 2025",
-  "introduction": "QuickPing VPN (\"we,\" \"us,\" or \"our\"), operated by Boratech, is committed to protecting your privacy. This Privacy Policy explains how we collect, use, share, and protect your personal data when you use our Services. By using the Services, you consent to these practices, including the use of your IP address and device timezone for service optimization as described below. For questions, contact [support_email].",
+  "introduction": "QuickPing VPN (\"we,\" \"us,\" or \"our\"), operated by [boratech_link], is committed to protecting your privacy. This Privacy Policy explains how we collect, use, share, and protect your personal data when you use our Services. By using the Services, you consent to these practices, including the use of your IP address and device timezone for service optimization as described below. For questions, contact [support_email].",
 
   "sections": [
     {
@@ -12,7 +12,7 @@
         "<strong>Account Information:</strong> Email and password (encrypted with SHA256/base64) for registration and login.",
         "<strong>Registration IP:</strong> Your IP address at sign-up to prevent abuse (e.g., multiple free accounts); deleted after verification or retained minimally if needed.",
         "<strong>Optimization Data:</strong> Real-time IP address (queried momentarily during splash screen on app launch for VPN server list tailoring based on location) and device timezone (automatically detected from device settings for API endpoint selection). Neither is stored on servers; processed in real-time only and not retained.",
-        "<strong>Device and Crash Information:</strong> Via Sentry for debugging (e.g., device model, OS version, battery level, memory usage, app version, crash logs, IP address, geography like country/city). This is anonymized and used only for error resolution. Full list: app_memory_limit, app_memory_usage, app_peak_memory, arch, battery_level, brand, charging, connection_type, cpu_description, device_type, dist, environment, family, free_storage, handled, id, interface_type, language, level, low_memory, manufacturer, mechanism, memory_size, model, model_id, name, online, orientation, processor_count, release, screen_density, screen_dpi, screen_resolution, simulator, storage_size, system_free_memory, thermal_state, timezone, user ID/IP/geography.",
+        "<strong>Device and Crash Information:</strong> Via [sentry_link] for debugging (e.g., device model, OS version, battery level, memory usage, app version, crash logs, IP address, geography like country/city). This is anonymized and used only for error resolution. Full list: app_memory_limit, app_memory_usage, app_peak_memory, arch, battery_level, brand, charging, connection_type, cpu_description, device_type, dist, environment, family, free_storage, handled, id, interface_type, language, level, low_memory, manufacturer, mechanism, memory_size, model, model_id, name, online, orientation, processor_count, release, screen_density, screen_dpi, screen_resolution, simulator, storage_size, system_free_memory, thermal_state, timezone, user ID/IP/geography.",
         "<strong>Payment Data:</strong> Handled by Apple; we do not store card details."
       ],
       "footer": "No location access, health data, browsing history, traffic, or connection logs collected or stored (even temporarily). We do not use data for tracking, profiling, or any purpose beyond what's explicitly stated."
@@ -24,7 +24,7 @@
       "list": [
         "To provide and maintain the Services (e.g., authentication, VPN connectivity, anti-abuse checks).",
         "For service optimization: Using real-time IP location to tailor VPN server lists (e.g., different numbers/countries based on user location) and device timezone to select appropriate API domains/servers for better speed and stability. This processing is essential for delivering optimal services and is fair to all users, with no discrimination.",
-        "For debugging and improvements (Sentry crashes).",
+        "For debugging and improvements ([sentry_link] crashes).",
         "To comply with legal obligations (e.g., fraud prevention)."
       ],
       "footer": "No selling, sharing, or using data for marketing, advertising, or any third-party purposes, in line with Apple Guideline 5.4."
@@ -38,7 +38,7 @@
       "number": "4",
       "title": "Data Sharing",
       "list": [
-        "<strong>Third Parties:</strong> Sentry for crashes (see their policy); Google Login SDK for authentication. No data sold or shared for any purpose.",
+        "<strong>Third Parties:</strong> [sentry_link] for crashes (see their policy); [google_login_sdk_link] for authentication. No data sold or shared for any purpose.",
         "<strong>Legal Requirements:</strong> We may disclose if required by law (e.g., court order), but only after verifying legality.",
         "<strong>Corporate Transactions:</strong> In case of merger/sale."
       ],
