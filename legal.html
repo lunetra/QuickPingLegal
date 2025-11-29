@@ -11,7 +11,7 @@
   <title>QuickPing VPN — Legal</title>
 
   <script>
-    const SITE_VERSION = "20251127.21";
+    const SITE_VERSION = "20251127.28";
     if (localStorage.getItem('siteVersion') !== SITE_VERSION) {
       localStorage.setItem('siteVersion', SITE_VERSION);
       if ('caches' in window) caches.keys().then(n => n.forEach(c => caches.delete(c)));
@@ -51,6 +51,17 @@
 </head>
 
 <body class="dark-mode">
+  <div id="preloader" class="preloader">
+    <div class="preloader-content">
+      <img src="assets/img/logo.png" alt="QuickPing VPN Logo" class="preloader-logo" />
+      <!-- <div class="preloader-spinner">
+        <div class="spinner-circle spinner-circle1"></div>
+        <div class="spinner-circle spinner-circle2"></div>
+        <div class="spinner-circle spinner-circle3"></div>
+      </div> -->
+    </div>
+  </div>
+
   <canvas id="full-particles"></canvas>
 
   <div class="container">
@@ -125,11 +136,19 @@
     </main>
 
     <footer class="footer">
-      <p>© 2025 <a href="https://boratech.uk" target="_blank" rel="noopener" class="text-link">Boratech</a>. All rights
-        reserved.</p>
+      <p>© <span id="current-year">2025</span> <a href="https://boratech.uk" target="_blank" rel="noopener" class="text-link">Boratech</a>. All rights reserved.</p>
       <p>Contact: <a href="mailto:support@quickping.net">support@quickping.net</a></p>
     </footer>
   </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const yearSpan = document.getElementById("current-year");
+      if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+      }
+    });
+  </script>
 
   <script>
     const LINKS = {
@@ -273,6 +292,14 @@
           contentEl.appendChild(closing);
         }
 
+        setTimeout(() => {
+          const preloader = document.getElementById('preloader');
+          preloader.style.opacity = '0';
+          setTimeout(() => {
+            preloader.style.display = 'none';
+          }, 300);
+        }, 1000);
+
       } catch (err) {
         console.error(err);
         document.getElementById('content').innerHTML = `
@@ -280,6 +307,13 @@
             Unable to load content. Check console for details.<br>
             <small>${path}</small>
           </p>`;
+        setTimeout(() => {
+          const preloader = document.getElementById('preloader');
+          preloader.style.opacity = '0';
+          setTimeout(() => {
+            preloader.style.display = 'none';
+          }, 300);
+        }, 1000);
       }
     }
 
