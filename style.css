@@ -1,6 +1,3 @@
-/* ====================== QuickPing VPN — Professional Dark Theme ====================== */
-
-/* DISABLE CACHE FOR DEVELOPMENT */
 header::before {
   content: "v20251127-1400-responsive-optimized";
   display: none;
@@ -158,6 +155,87 @@ body {
   flex-shrink: 0;
 }
 
+/* New Menu Switcher — Professional Responsive */
+.menu-switcher {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  right: auto !important;
+  z-index: 1000;
+  display: none; /* Hidden by default, shown on mobile */
+}
+
+.menu-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: rgba(15, 23, 42, 0.9);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  color: white;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  transition: var(--transition);
+}
+
+.menu-toggle:hover {
+  background: rgba(15, 23, 42, 1);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.5);
+}
+
+.menu-toggle svg {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.menu-dropdown {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 0;
+  right: auto !important;
+  background: #0f172a;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px) scale(0.95);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  min-width: 200px;
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.menu-dropdown.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+}
+
+.menu-dropdown .nav-link {
+  display: block;
+  padding: 0.7rem 1.5rem;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+  transition: var(--transition);
+  white-space: nowrap;
+}
+
+.menu-dropdown .nav-link:hover,
+.menu-dropdown .nav-link.active {
+  background: rgba(62, 180, 191, 0.55);
+  color: white;
+}
+
 /* Header */
 .header {
   position: relative;
@@ -235,6 +313,51 @@ body {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   letter-spacing: -0.8px;
+}
+
+.header-nav {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  display: flex;
+  gap: 1.8rem;
+  align-items: center;
+  padding: 0.5rem 1.4rem;
+  border-radius: 50px;
+  z-index: 1000;
+  transition: var(--transition);
+  user-select: none;
+}
+
+.nav-link {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: var(--transition);
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--primary-hover);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--primary-hover);
+  transition: var(--transition);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
 }
 
 .updated {
@@ -417,6 +540,21 @@ body {
 
 [dir="rtl"] .lang-current {
   flex-direction: row-reverse;
+}
+
+[dir="rtl"] .menu-dropdown {
+  text-align: right;
+}
+
+/* Remove RTL overrides for positions */
+.lang-switcher {
+  right: 1rem !important;
+  left: auto !important;
+}
+
+.menu-switcher {
+  left: 1rem !important;
+  right: auto !important;
 }
 
 /* Responsive Design - Optimized for All Devices */
@@ -630,6 +768,35 @@ body {
     padding: 2rem 1rem;
     font-size: 0.9rem;
   }
+
+  /* Show menu switcher and hide header-nav on mobile */
+  .menu-switcher {
+    display: block;
+  }
+
+  .header-nav {
+    display: none;
+  }
+
+  .menu-toggle {
+    width: 40px;
+    height: 40px;
+  }
+
+  .menu-toggle svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .menu-dropdown .nav-link {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.95rem;
+  }
+
+  /* Remove underline for nav links in dropdown */
+  .menu-dropdown .nav-link::after {
+    display: none;
+  }
 }
 
 /* Extra small screens (small mobiles, up to 480px) */
@@ -641,6 +808,11 @@ body {
   .lang-switcher {
     top: 0.75rem;
     right: 0.75rem;
+  }
+
+  .menu-switcher {
+    top: 0.75rem;
+    left: 0.75rem;
   }
 
   .header-logo {
@@ -686,6 +858,16 @@ body {
 
   .footer {
     padding: 1.5rem 0.75rem;
+  }
+
+  .menu-toggle {
+    width: 36px;
+    height: 36px;
+  }
+
+  .menu-toggle svg {
+    width: 18px;
+    height: 18px;
   }
 }
 
