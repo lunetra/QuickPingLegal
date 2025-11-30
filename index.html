@@ -11,15 +11,19 @@
   <title>QuickPing VPN — Legal</title>
 
   <script>
-    const SITE_VERSION = "20251127.44";
+    const SITE_VERSION = "20251127.45";
     if (localStorage.getItem('siteVersion') !== SITE_VERSION) {
       localStorage.setItem('siteVersion', SITE_VERSION);
-      if ('caches' in window) caches.keys().then(n => n.forEach(c => caches.delete(c)));
-      window.location.reload(true);
+      if ('caches' in window) {
+        caches.keys().then(names => {
+          names.forEach(name => caches.delete(name));
+        });
+      }
+      setTimeout(() => window.location.reload(), 200);
     }
   </script>
 
-  <link rel="stylesheet" href="style.css?v=20251127.44" />
+  <link rel="stylesheet" href="style.css?v=20251127.45" />
   <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
 
   <link
@@ -276,7 +280,7 @@
           </div>
 
           <div class="lang-dropdown" id="lang-dropdown">
-            <button data-lang="en" class="lang-option active"><span class="fi fi-gb"></span> English</button>
+            <button data-lang="en" class="lang-option"><span class="fi fi-gb"></span> English</button>
             <button data-lang="fa" class="lang-option"><span class="fi fi-ir"></span> فارسی</button>
             <button data-lang="ar" class="lang-option"><span class="fi fi-sa"></span> العربية</button>
             <button data-lang="ur" class="lang-option"><span class="fi fi-pk"></span> اردو</button>
@@ -313,15 +317,6 @@
       <p>Contact: <a href="mailto:support@quickping.net">support@quickping.net</a></p>
     </footer>
   </div>
-
-  <script>
-    document.documentElement.style.overflow = 'hidden';
-    window.addEventListener('load', () => {
-      setTimeout(() => {
-        document.documentElement.style.overflow = '';
-      }, 500);
-    });
-  </script>
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
@@ -389,7 +384,27 @@
       return `assets/lang/${lang}/${fileName}`;
     }
 
+    function showPreloader() {
+      const preloader = document.getElementById('preloader');
+      preloader.style.display = 'flex';
+      preloader.style.opacity = '1';
+      document.documentElement.style.overflow = 'hidden';
+    }
+
+    function hidePreloader() {
+      const preloader = document.getElementById('preloader');
+      preloader.style.opacity = '0';
+
+      setTimeout(() => {
+        preloader.style.display = 'none';
+        document.documentElement.style.overflow = '';
+      }, 300);
+    }
+
+
     async function loadContent(lang) {
+      showPreloader();
+
       const path = getJsonPath(lang, currentPage);
       try {
         const res = await fetch(path + '?v=' + Date.now());
@@ -474,13 +489,7 @@
           contentEl.appendChild(closing);
         }
 
-        setTimeout(() => {
-          const preloader = document.getElementById('preloader');
-          preloader.style.opacity = '0';
-          setTimeout(() => {
-            preloader.style.display = 'none';
-          }, 300);
-        }, 1000);
+        setTimeout(hidePreloader, 1000);
 
       } catch (err) {
         console.error(err);
@@ -489,13 +498,7 @@
             Unable to load content. Check console for details.<br>
             <small>${path}</small>
           </p>`;
-        setTimeout(() => {
-          const preloader = document.getElementById('preloader');
-          preloader.style.opacity = '0';
-          setTimeout(() => {
-            preloader.style.display = 'none';
-          }, 300);
-        }, 1000);
+        setTimeout(hidePreloader, 1000);
       }
     }
 
@@ -531,6 +534,24 @@
       langCurrent.querySelector('.lang-name').textContent = langNames[lang] || 'English';
     }
 
+    function updateActiveOption(lang) {
+      langOptions.forEach(btn => {
+        btn.classList.remove('active');
+
+        if (btn.dataset.lang === lang) {
+          btn.classList.add('active');
+        }
+      });
+    }
+
+    function updateCurrentLangUI(lang) {
+      const flagEl = langCurrent.querySelector('.fi');
+      const nameEl = langCurrent.querySelector('.lang-name');
+
+      flagEl.className = `fi fi-${flagMap[lang] || 'gb'}`;
+      nameEl.textContent = langNames[lang] || 'English';
+    }
+
     langCurrent.addEventListener('click', (e) => {
       e.stopPropagation();
       langDropdown.classList.toggle('show');
@@ -542,20 +563,27 @@
       opt.addEventListener('click', (e) => {
         e.stopPropagation();
         const newLang = opt.dataset.lang;
-        if (newLang === currentLang) {
-          langDropdown.classList.remove('show');
-          return;
-        }
+
+        if (newLang === currentLang) return;
+
         currentLang = newLang;
+
         localStorage.setItem('quickping-lang', currentLang);
         updateLangInUrl(currentLang);
         updateCurrentLang(currentLang);
-        loadContent(currentLang);
+        updateActiveOption(currentLang);
+        updateCurrentLangUI(currentLang);
 
-        langOptions.forEach(o => o.classList.remove('active'));
-        opt.classList.add('active');
         langDropdown.classList.remove('show');
+
+        loadContent(currentLang);
       });
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!langCurrent.contains(e.target) && !langDropdown.contains(e.target)) {
+        langDropdown.classList.remove('show');
+      }
     });
 
     document.addEventListener('click', () => {
