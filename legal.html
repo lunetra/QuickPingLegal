@@ -11,7 +11,7 @@
   <title>QuickPing VPN — Legal</title>
 
   <script>
-    const SITE_VERSION = "20251127.28";
+    const SITE_VERSION = "20251127.30";
     if (localStorage.getItem('siteVersion') !== SITE_VERSION) {
       localStorage.setItem('siteVersion', SITE_VERSION);
       if ('caches' in window) caches.keys().then(n => n.forEach(c => caches.delete(c)));
@@ -47,6 +47,169 @@
     .dark-mode .text-link:hover {
       color: #a0d8ff;
     }
+
+    /* Preloader Styles - Final Version (Mobile Optimized + Wave Shadow Animation) */
+    .preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: var(--bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      opacity: 1;
+      transition: opacity 0.3s ease;
+      overflow: hidden;
+      direction: rtl;
+    }
+
+    .preloader-content {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.8rem;
+      padding: 2rem;
+    }
+
+    /* Responsive Logo Size */
+    .preloader-logo {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      object-fit: contain;
+      background: rgba(15, 23, 42, 0.95);
+      padding: 12px;
+      border: 3px solid rgba(17, 147, 190, 0.5);
+      box-shadow:
+        0 0 30px rgba(20, 184, 166, 0),
+        0 0 0 8px rgba(20, 184, 166, 0);
+      position: relative;
+      z-index: 2;
+      animation: wave-shadow 1s infinite ease-in-out;
+    }
+
+    @keyframes wave-shadow {
+      0% {
+        box-shadow:
+          0 0 30px rgba(17, 147, 190, 0),
+          0 0 0 8px rgba(17, 147, 190, 0);
+      }
+
+      50% {
+        box-shadow:
+          0 0 40px rgba(17, 147, 190, 0.5),
+          0 0 0 20px rgba(17, 147, 190, 0.15);
+      }
+
+      100% {
+        box-shadow:
+          0 0 30px rgba(17, 147, 190, 0),
+          0 0 0 8px rgba(17, 147, 190, 0);
+      }
+    }
+
+    /* Mobile Optimization */
+    @media (max-width: 767px) {
+      .preloader-logo {
+        width: 72px;
+        height: 72px;
+        padding: 10px;
+        border-width: 2.5px;
+      }
+
+      .preloader-content {
+        gap: 1.4rem;
+      }
+
+      .preloader-text {
+        font-size: 1rem;
+      }
+
+      .preloader-spinner {
+        gap: 0.4rem;
+      }
+
+      .spinner-circle {
+        width: 10px;
+        height: 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .preloader-logo {
+        width: 68px;
+        height: 68px;
+        padding: 8px;
+      }
+
+      .preloader-text {
+        font-size: 0.95rem;
+      }
+    }
+
+    .preloader-spinner {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .spinner-circle {
+      width: 12px;
+      height: 12px;
+      background-color: var(--primary);
+      border-radius: 50%;
+      animation: bounce 1.4s infinite ease-in-out;
+    }
+
+    .spinner-circle1 {
+      animation-delay: -0.32s;
+    }
+
+    .spinner-circle2 {
+      animation-delay: -0.16s;
+    }
+
+    .spinner-circle3 {
+      animation-delay: 0s;
+    }
+
+    @keyframes bounce {
+
+      0%,
+      80%,
+      100% {
+        transform: scale(0);
+      }
+
+      40% {
+        transform: scale(1);
+      }
+    }
+
+    .preloader-text {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+      font-weight: 500;
+      letter-spacing: 0.6px;
+      animation: text-fade 1.8s infinite ease-in-out;
+    }
+
+    @keyframes text-fade {
+
+      0%,
+      100% {
+        opacity: 0.7;
+      }
+
+      50% {
+        opacity: 1;
+      }
+    }
   </style>
 </head>
 
@@ -62,10 +225,10 @@
     </div>
   </div>
 
+  <div class="bg-blur"></div>
   <canvas id="full-particles"></canvas>
 
   <div class="container">
-    <canvas id="full-particles"></canvas>
 
     <header class="header">
       <div class="header-content">
@@ -136,10 +299,20 @@
     </main>
 
     <footer class="footer">
-      <p>© <span id="current-year">2025</span> <a href="https://boratech.uk" target="_blank" rel="noopener" class="text-link">Boratech</a>. All rights reserved.</p>
+      <p>© <span id="current-year">2025</span> <a href="https://boratech.uk" target="_blank" rel="noopener"
+          class="text-link">Boratech</a>. All rights reserved.</p>
       <p>Contact: <a href="mailto:support@quickping.net">support@quickping.net</a></p>
     </footer>
   </div>
+
+  <script>
+    document.documentElement.style.overflow = 'hidden';
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        document.documentElement.style.overflow = '';
+      }, 500);
+    });
+  </script>
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
