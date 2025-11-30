@@ -11,7 +11,7 @@
   <title>QuickPing VPN — Legal</title>
 
   <script>
-    const SITE_VERSION = "20251127.30";
+    const SITE_VERSION = "20251127.44";
     if (localStorage.getItem('siteVersion') !== SITE_VERSION) {
       localStorage.setItem('siteVersion', SITE_VERSION);
       if ('caches' in window) caches.keys().then(n => n.forEach(c => caches.delete(c)));
@@ -19,7 +19,7 @@
     }
   </script>
 
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=20251127.44" />
   <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
 
   <link
@@ -79,36 +79,45 @@
     .preloader-logo {
       width: 90px;
       height: 90px;
-      border-radius: 50%;
+      border-radius: 79% 21% 70% 30% / 50% 48% 52% 50%;
       object-fit: contain;
-      background: rgba(15, 23, 42, 0.95);
       padding: 12px;
-      border: 3px solid rgba(17, 147, 190, 0.5);
-      box-shadow:
-        0 0 30px rgba(20, 184, 166, 0),
-        0 0 0 8px rgba(20, 184, 166, 0);
       position: relative;
       z-index: 2;
-      animation: wave-shadow 1s infinite ease-in-out;
+      animation: neon-wave 1s infinite ease-in-out;
     }
 
-    @keyframes wave-shadow {
-      0% {
+    @keyframes neon-wave {
+
+      0%,
+      100% {
         box-shadow:
-          0 0 30px rgba(17, 147, 190, 0),
-          0 0 0 8px rgba(17, 147, 190, 0);
+          0 0 20px rgba(0, 255, 255, 0.356),
+          0 0 40px rgba(0, 255, 255, 0.227),
+          0 0 60px rgba(17, 147, 190, 0.299);
       }
 
       50% {
         box-shadow:
-          0 0 40px rgba(17, 147, 190, 0.5),
-          0 0 0 20px rgba(17, 147, 190, 0.15);
+          0 0 30px rgba(0, 255, 255, 0.458),
+          0 0 60px rgba(0, 255, 255, 0.334),
+          0 0 100px rgba(17, 147, 190, 0.783);
       }
+    }
 
+    @keyframes wave-pulse {
+
+      0%,
       100% {
         box-shadow:
-          0 0 30px rgba(17, 147, 190, 0),
-          0 0 0 8px rgba(17, 147, 190, 0);
+          0 0 20px rgba(17, 147, 190, 0.4),
+          0 -4px 40px rgba(17, 147, 190, 0.3);
+      }
+
+      50% {
+        box-shadow:
+          0 0 40px rgba(17, 147, 190, 0.7),
+          0 -12px 60px rgba(17, 147, 190, 0.4);
       }
     }
 

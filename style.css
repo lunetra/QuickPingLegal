@@ -19,7 +19,6 @@ header::before {
   --text-muted: #94a3b8;
   --primary: #14b8a6;
   --primary-hover: #2dd4bf;
-  --accent: #0d948964;
   --danger: #ef4444;
   --success: #10b981;
   --radius: 20px;
@@ -171,7 +170,6 @@ body {
   right: auto !important;
   z-index: 1000;
   display: none;
-  /* Hidden by default, shown on mobile */
 }
 
 .menu-toggle {
@@ -250,7 +248,7 @@ body {
   position: relative;
   padding: 4rem 2.5rem 3rem;
   text-align: center;
-  background: linear-gradient(135deg, var(--accent), #0f766d00);
+  background: linear-gradient(100deg, #0d94890e, #0f766d00);
   overflow: visible;
   z-index: 1;
 }
@@ -261,7 +259,7 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 6px;
+  height: 3px;
   background: linear-gradient(90deg, transparent, var(--primary), transparent);
 }
 
@@ -290,10 +288,10 @@ body {
 .header-logo {
   width: 96px;
   height: 96px;
+  border-radius: 79% 21% 70% 30% / 50% 48% 52% 50%;
   object-fit: contain;
   background: rgba(15, 23, 42, 0.98);
   padding: 14px;
-  border-radius: 24px;
   border: 4px solid rgba(20, 184, 166, 0.6);
   box-shadow:
     0 16px 40px rgba(0, 0, 0, 0.7),
@@ -616,7 +614,6 @@ body {
     width: 90px;
     height: 90px;
     padding: 12px;
-    border-radius: 22px;
   }
 
   .header-text h1 {
@@ -702,7 +699,6 @@ body {
     width: 80px;
     height: 80px;
     padding: 10px;
-    border-radius: 20px;
     border-width: 3px;
   }
 
@@ -828,7 +824,6 @@ body {
     width: 70px;
     height: 70px;
     padding: 8px;
-    border-radius: 18px;
   }
 
   .header-text h1 {
